@@ -1,11 +1,4 @@
 $(document).ready(function () {
-  $('.hire-me').click(function () {
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, 500);
-    return false;
-  });
-
   $('ul.nav-pills li a').click(function (e) {
     $('ul.nav-pills li.active').removeClass('active');
     $(this).parent('li').addClass('active');
