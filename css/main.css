@@ -642,8 +642,16 @@ label.valid {
     text-align: center;
   }
 
-  #page-profile .profile {
-    margin: 0 auto 20px auto;
+  .btn-facebook {
+    display: none;
+  }
+
+  .btn-instagram {
+    display: none;
+  }
+  
+  .btn-google {
+    display: none;
   }
 
 }

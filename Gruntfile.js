@@ -4,8 +4,6 @@ module.exports = function (grunt) {
     concat: {
       css: {
         src:  [
-          'css/bootstrap.min.css',
-          'css/font-awesome.min.css',
           'css/magnific-popup.css',
           'css/main.css'
         ],
@@ -13,8 +11,6 @@ module.exports = function (grunt) {
       },
       js:  {
         src:  [
-          'js/jquery-1.10.2.min.js',
-          'js/bootstrap.min.js',
           'js/jquery.scrollTo.js',
           'js/jquery.nav.js',
           'js/jquery.sticky.js',
