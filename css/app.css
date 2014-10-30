@@ -467,6 +467,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   background-color: transparent;
+  cursor: pointer;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -486,6 +487,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   -moz-background-size:    cover;
   -o-background-size:      cover;
   background-size:         cover;
+  background-color: #333;
 }
 
 #page-welcome header {
