@@ -1,3 +1,11 @@
+html { 
+  background-color: #333;
+}
+
+body {
+  background-color: transparent;
+}
+
 html, body {
   height:      100%;
   width:       100%;
@@ -104,7 +112,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   -moz-background-size:    cover;
   -o-background-size:      cover;
   background-size:         cover;
-  background-color: #333;
+  background-color: transparent;
 }
 
 #page-welcome header {
