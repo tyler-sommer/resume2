@@ -63,6 +63,10 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   color: #0088cc;
 }
 
+#page-contact .contact-info .mailing-address {
+  font-size: 1em;
+}
+
 
 .navbar {
   width: 100%;
