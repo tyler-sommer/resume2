@@ -58,6 +58,23 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   color: #ffffff;
 }
 
+#contact a {
+  color: white;
+}
+
+#contact a:hover, #contact a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer a {
+  text-decoration: underline;
+}
+
+#footer a:hover, #footer a:active {
+  text-decoration: none;
+}
+
 #profile.print {
   margin: 50px; 
   padding: 75px 100px;
