@@ -105,6 +105,10 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   font-size: 18px;
 }
 
+#profile.print .contact.phone {
+  font-size: 16px;
+}
+
 @media print {
   header {
     margin-top: 0;
