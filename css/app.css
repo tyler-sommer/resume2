@@ -417,46 +417,46 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   background: #0088cc;
 }
 
-#page-contact {
+#contact {
   background: #0088cc;
   color:      #ffffff;
 }
 
-#page-contact .spacer {
+#contact .spacer {
   background: #ffffff;
 }
 
-#page-contact .section-title {
+#contact .section-title {
   color: #ffffff;
 }
 
-#page-profile.print {
+#profile.print {
   margin: 50px; 
   padding: 75px 100px;
   font-size: 16px;
 }
 
-#page-profile.print h3 {
+#profile.print h3 {
   text-transform: uppercase;
   font-size: 20px;
 }
 
-#page-profile.print dd {
+#profile.print dd {
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
-#page-profile.print .spacer {
+#profile.print .spacer {
   margin-top: 50px;
   margin-bottom: 20px;
 }
 
-#page-profile.print header .spacer {
+#profile.print header .spacer {
   margin-top: 30px;
   margin-bottom: 0;
 }
 
-#page-profile.print .contact {
+#profile.print .contact {
   font-size: 18px;
 }
 
@@ -478,7 +478,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
     display: none !important;
   }
   
-  #page-profile.print {
+  #profile.print {
     margin: 0;
     padding: 0 .5in;
     background-color: white;
@@ -486,7 +486,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   }
 }
 
-#page-profile.print dd.etc {
+#profile.print dd.etc {
   margin-bottom: 5px;
 }
 
@@ -495,7 +495,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   color: #0088cc;
 }
 
-#page-contact .contact-info .mailing-address {
+#contact .contact-info .mailing-address {
   font-size: 1em;
 }
 
@@ -537,7 +537,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
 }
 
 
-#page-welcome {
+#welcome {
   width:                   100%;
   height:                  100%;
   position:                relative;
@@ -550,13 +550,13 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   background-color: transparent;
 }
 
-#page-welcome header {
+#welcome header {
   color:       #ffffff;
   padding-top: 20%;
 
 }
 
-#page-welcome header h1 {
+#welcome header h1 {
   margin:         0;
   padding:        0;
   font-size:      4.5em;
@@ -567,7 +567,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   text-shadow: 1px 1px #333;
 }
 
-#page-welcome header p {
+#welcome header p {
   font-size:      2em;
   display:        inline-block;
   margin-bottom:  5px;
@@ -579,12 +579,12 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   text-shadow: 1px 1px #333;
 }
 
-#page-profile {
+#profile {
   padding:    75px 0;
   background: #ffffff;
 }
 
-#page-profile .profile {
+#profile .profile {
   border:        2px solid #0088cc;
   border-radius: 100%;
   width:         250px;
@@ -593,13 +593,13 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   overflow:      hidden;
 }
 
-#page-profile .profile img {
+#profile .profile img {
   border:        5px solid #f7f7f7;
   border-radius: 100%;
 
 }
 
-#page-skills {
+#skills {
   padding:    75px 0;
   background: #fefdfe;
   text-align: center;
@@ -607,23 +607,23 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   border-bottom: 1px solid #dedede;
 }
 
-#page-experience {
+#experience {
   padding:    75px 0;
   background: #ffffff;
 }
 
-#page-portfolio {
+#portfolio {
   padding:    75px 0;
   background: #fefdfe;
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
 }
 
-#page-contact {
+#contact {
   padding: 75px 0;
 }
 
-#page-footer {
+#footer {
   padding: 90px 0;
   background-color: #333;
   color: #f7f7f7;
@@ -631,7 +631,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   text-align: center;
 }
 
-#page-contact .contact-info p {
+#contact .contact-info p {
   font-size: 1.2em;
   text-align: center;
 }
@@ -781,7 +781,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   list-style: none;
 }
 
-#page-welcome:hover .slider-controls {
+#welcome:hover .slider-controls {
   opacity:            1;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition:    all 0.4s ease-in-out;
@@ -1043,7 +1043,7 @@ label.valid {
 
 @media (max-width: 992px) {
 
-  #page-profile .profile {
+  #profile .profile {
     margin: 0 auto 20px auto;
   }
 
@@ -1051,11 +1051,11 @@ label.valid {
 
 @media (max-width: 479px) {
 
-  #page-welcome header h1 {
+  #welcome header h1 {
     font-size: 2em;
   }
 
-  #page-welcome header p {
+  #welcome header p {
     font-size:   1em;
     line-height: 3em;
   }
@@ -1069,7 +1069,7 @@ label.valid {
     font-size: 1.2em;
   }
 
-  #page-skills {
+  #skills {
     text-align: center;
   }
 

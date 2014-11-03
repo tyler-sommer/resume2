@@ -44,7 +44,7 @@ $(document).ready(function () {
 
   $('#main-menu').onePageNav({
     currentClass:    "active",
-    changeHash:      false,
+    changeHash:      true,
     scrollThreshold: 0.5,
     scrollSpeed:     750,
     filter:          "",
