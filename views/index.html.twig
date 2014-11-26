@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Tyler Sommer">
 
-  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   
   <link href="//cdn.jsdelivr.net/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="//cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="../css/app.min.css">
+  <link rel="stylesheet" href="{{  asset('css/app.min.css') }}">
   
   <!--[if lt IE 9]>
   <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -79,7 +79,7 @@
       </header>
       <div class="row">
         <div class="col-md-3">
-          <div class="profile"><img src="../img/profile.jpeg" alt="profile"/></div>
+          <div class="profile"><img src="{{ asset('img/profile.jpeg') }}" alt="profile"/></div>
         </div>
         <div class="col-md-9">
           <p>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</p>
@@ -154,33 +154,33 @@
         <div class="col-md-8 col-md-offset-2">
           <ul id="grid" class="grid-wrapper">
             <li class="mix backend open-source">
-              <a href="../img/portfolio/large/portfolio-bigred.png">
+              <a href="{{ asset('img/portfolio/large/portfolio-bigred.png') }}">
                 <div class="overlay"><i class="fa fa-search"></i></div>
-                <img src="../img/portfolio/small/portfolio-bigred-sm.png" alt="Big Red, The Button Does Things~~" title="Big Red, The Button Does Things~~">
+                <img src="{{ asset('img/portfolio/small/portfolio-bigred-sm.png') }}" alt="Big Red, The Button Does Things~~" title="Big Red, The Button Does Things~~">
               </a> 
             </li>
             <li class="mix open-source">
-              <a href="../img/portfolio/large/portfolio-squircy.png">
+              <a href="{{ asset('img/portfolio/large/portfolio-squircy.png') }}">
                 <div class="overlay"><i class="fa fa-search"></i></div>
-                <img src="../img/portfolio/small/portfolio-squircy-sm.png" alt="squIRCy2 IRC Bot" title="squIRCy2 IRC Bot">
+                <img src="{{ asset('img/portfolio/small/portfolio-squircy-sm.png') }}" alt="squIRCy2 IRC Bot" title="squIRCy2 IRC Bot">
               </a>
             </li>
             <li class="mix backend open-source">
-              <a href="../img/portfolio/large/portfolio-packages.png">
+              <a href="{{ asset('img/portfolio/large/portfolio-packages.png') }}">
                 <div class="overlay"><i class="fa fa-search"></i></div>
-                <img src="../img/portfolio/small/portfolio-packages-sm.png" alt="Packages - Composer Repository Management" title="Packages - Composer Repository Management">
+                <img src="{{ asset('img/portfolio/small/portfolio-packages-sm.png') }}" alt="Packages - Composer Repository Management" title="Packages - Composer Repository Management">
               </a>
             </li>
             <li class="mix mobile">
-              <a href="../img/portfolio/large/portfolio-epk-ios.png">
+              <a href="{{ asset('img/portfolio/large/portfolio-epk-ios.png') }}">
                 <div class="overlay"><i class="fa fa-search"></i></div>
-                <img src="../img/portfolio/small/portfolio-epk-ios-sm.png" alt="Easy Payment Kiosk - iOS App" title="Easy Payment Kiosk - iOS App">
+                <img src="{{ asset('img/portfolio/small/portfolio-epk-ios-sm.png') }}" alt="Easy Payment Kiosk - iOS App" title="Easy Payment Kiosk - iOS App">
               </a>
             </li>
             <li class="mix backend">
-              <a href="../img/portfolio/large/portfolio-epk-web.png">
+              <a href="{{ asset('img/portfolio/large/portfolio-epk-web.png') }}">
                 <div class="overlay"><i class="fa fa-search"></i></div>
-                <img src="../img/portfolio/small/portfolio-epk-web-sm.png" alt="Easy Payment Kiosk - Back office management system" title="Back office management system">
+                <img src="{{ asset('img/portfolio/small/portfolio-epk-web-sm.png') }}" alt="Easy Payment Kiosk - Back office management system" title="Back office management system">
               </a>
             </li>
           </ul>
@@ -208,7 +208,7 @@
   
   <section id="footer" class="page-footer">
     <div class="container">
-      <p class="cp">&copy; Copyright 2014 Tyler Sommer. <a href="print.html">View print version</a>. <a href="https://tylersommer.com">Visit my blog</a>!</p>
+      <p class="cp">&copy; Copyright 2014 Tyler Sommer. <a href="print">View print version</a>. <a href="https://tylersommer.com">Visit my blog</a>!</p>
     </div>
   </section>
 
@@ -224,6 +224,6 @@
   </script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../js/app.min.js"></script>
+  <script type="text/javascript" src="{{ asset('js/app.min.js') }}"></script>
 </body>
 </html>
