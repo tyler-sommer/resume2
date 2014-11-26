@@ -4,40 +4,40 @@ module.exports = function (grunt) {
     concat: {
       css: {
         src:  [
-          'css/magnific-popup.css',
-          'css/main.css'
+          'web/css/magnific-popup.css',
+          'web/css/main.css'
         ],
-        dest: 'css/app.css'
+        dest: 'web/css/app.css'
       },
       js:  {
         src:  [
-          'js/jquery.scrollTo.js',
-          'js/jquery.nav.js',
-          'js/jquery.sticky.js',
-          'js/jquery.vegas.min.js',
-          'js/jquery.isotope.min.js',
-          'js/jquery.magnific-popup.min.js',
-          'js/waypoints.min.js',
-          'js/main.js'
+          'web/js/jquery.scrollTo.js',
+          'web/js/jquery.nav.js',
+          'web/js/jquery.sticky.js',
+          'web/js/jquery.vegas.min.js',
+          'web/js/jquery.isotope.min.js',
+          'web/js/jquery.magnific-popup.min.js',
+          'web/js/waypoints.min.js',
+          'web/js/main.js'
         ],
-        dest: 'js/app.js'
+        dest: 'web/js/app.js'
       }
     },
     cssmin: {
       css: {
-        src:  'css/app.css',
-        dest: 'css/app.min.css'
+        src:  'web/css/app.css',
+        dest: 'web/css/app.min.css'
       }
     },
     uglify: {
       js: {
         files: {
-          'js/app.min.js': ['js/app.js']
+          'web/js/app.min.js': ['web/js/app.js']
         }
       }
     },
     watch:  {
-      files:   ['css/*', 'js/*'],
+      files:   ['web/css/*', 'web/js/*'],
       tasks:   ['concat', 'cssmin', 'uglify'],
       options: {
         debounceDelay: 1000
