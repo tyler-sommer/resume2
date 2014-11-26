@@ -630,12 +630,12 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
 
 #experience {
   padding:    75px 0;
-  background: #ffffff;
+  background: #fefdfe;
 }
 
 #portfolio {
   padding:    75px 0;
-  background: #fefdfe;
+  background: #ffffff;
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
 }
