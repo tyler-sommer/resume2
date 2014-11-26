@@ -14,7 +14,6 @@ module.exports = function (grunt) {
           'js/jquery.scrollTo.js',
           'js/jquery.nav.js',
           'js/jquery.sticky.js',
-          'js/jquery.easypiechart.min.js',
           'js/jquery.vegas.min.js',
           'js/jquery.isotope.min.js',
           'js/jquery.magnific-popup.min.js',
