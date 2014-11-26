@@ -485,14 +485,27 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
   header {
     margin-top: 0;
   }
-  
-  dt.novacare {
-    page-break-before: always;
+
+  #profile.print .section-title {
+    margin: 0 auto;
   }
-  
-  .spacer {
+
+  #profile.print .spacer {
     display: block !important;
     background: #08c !important;
+    margin: 20px auto;
+  }
+
+  #profile.print h3 {
+    font-size: 16px;
+  }
+
+  .print-hidden, #profile.print .spacer.print-hidden {
+    display: none !important;
+  }
+
+  .print .section-subtitle {
+    padding: 10px 0;
   }
   
   .vegas-background, .vegas-overlay, .vegas-loading {
@@ -503,7 +516,7 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
     margin: 0;
     padding: 0 .5in;
     background-color: white;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
