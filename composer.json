@@ -3,6 +3,8 @@
     "description": "Tyler Sommer's Resume",
     "require": {
         "nice/framework": "1.0.x-dev",
-        "nice/twig": "1.0.x-dev"
+        "nice/twig": "1.0.x-dev",
+        "stack/builder": "dev-master",
+        "stack/run": "dev-master"
     }
 }
