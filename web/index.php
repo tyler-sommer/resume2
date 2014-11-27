@@ -1,5 +1,6 @@
 <?php
 
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Nice\Application;
@@ -51,6 +52,19 @@ $app->set('routes', function (RouteCollector $r) use ($renderCachedPage) {
 
     $r->map('/print', 'print', function (Request $request) use ($renderCachedPage) {
         return $renderCachedPage($request, 'print.html.twig');
+    });
+
+    // Deprecated routes
+    $r->map('/print.html', null, function (Application $app) {
+        $url = $app->get('router.url_generator')->generate('print');
+
+        return new RedirectResponse($url, 301);
+    });
+
+    $r->map('/index.html', null, function (Application $app) {
+        $url = $app->get('router.url_generator')->generate('home');
+
+        return new RedirectResponse($url, 301);
     });
 });
 
