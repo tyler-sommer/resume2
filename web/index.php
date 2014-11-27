@@ -19,9 +19,9 @@ $templateDir = __DIR__ . '/../views/';
  * @param string $template
  * @return Response
  */
-$renderCachedPage = function(Request $request, $template) use ($app, $templateDir) {
+$renderCachedPage = function(Request $request, $template) use ($app, $templateDir, $cacheDir) {
     $response = new Response();
-    $response->setLastModified(new \DateTime('@' . filemtime($templateDir.$template)));
+    $response->setLastModified(new \DateTime('@'.filemtime($templateDir.$template)));
     $response->setPublic();
     if (($hash = md5_file($templateDir.$template)) !== '') {
         $response->setEtag($hash);
@@ -30,7 +30,15 @@ $renderCachedPage = function(Request $request, $template) use ($app, $templateDi
         return $response;
     }
 
-    $response->setContent($app->get('twig')->render($template));
+    $cacheFile = $cacheDir.'/twig-'.$hash;
+    if (file_exists($cacheFile)) {
+        $content = file_get_contents($cacheFile);
+    } else {
+        $content = $app->get('twig')->render($template);
+        file_put_contents($cacheFile, $content);
+    }
+
+    $response->setContent($content);
 
     return $response;
 };
