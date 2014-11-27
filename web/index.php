@@ -5,8 +5,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Nice\Application;
 use Nice\Extension\TwigExtension;
 use Nice\Router\RouteCollector;
-use Symfony\Component\HttpKernel\HttpCache\HttpCache;
-use Symfony\Component\HttpKernel\HttpCache\Store;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -48,11 +46,4 @@ $app->set('routes', function (RouteCollector $r) use ($renderCachedPage) {
     });
 });
 
-$stack = new Stack\Builder();
-$stack->push(function ($app) use ($cacheDir) {
-    return new HttpCache($app, new Store($cacheDir));
-});
-
-$app = $stack->resolve($app);
-
-Stack\run($app);
+$app->run();
