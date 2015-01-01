@@ -27,42 +27,41 @@
     <div class="row">
       <div class="col-sm-12">
       <header class="section-header">
-        <h2 class="section-title">Tyler Sommer</h2>
-        <p class="contact">contact@tylersommer.pro</p>
-        <p class="contact phone">(801) 232-1478</p>
+        <h2 class="section-title">{{ resume.name }}</h2>
+        <p class="contact">{{ resume.email }}</p>
+        <p class="contact phone">{{ resume.phone }}</p>
         <div class="spacer"></div>
-        <p class="section-subtitle">Professional Software Developer</p>
+        <p class="section-subtitle">{{ resume.title }}</p>
       </header>
       <div class="row">
         <div class="col-md-12">
-          <p>Six years of professional software development experience in demanding, fast-paced environments. Focus primarily in backend systems: e-commerce, payment processing platforms, and business management software. Strengths include problem solving, communication, technical writing, and server management. Passionate about open source software.</p>
+          <p>{{ resume.description }}</p>
           <div class="spacer"></div>
           <h3>Experience</h3>
           <dl>
-            <dt>Terramar Labs / Lead Developer / San Diego, CA / 2012 - Current</dt>
-            <dd>Built software for small to medium businesses to help manage their internal processes and bottom line. Developed reporting and analytics tools, customer management, truck route optimization system, mobile kiosk applications, and web services. Designed, engineered, and contributed to many open source applications leveraged by Terramar Labs to manage code packages, code review, and payment processing.</dd>
-            
-            <dt>PayRoll Innovations / Lead Developer / South Jordan, UT / 2010 - 2012</dt>
-            <dd>Architected a payday advance loan processing system integrated with card issuing platforms. Implemented risk scoring algorithm to automatically qualify potential loan applicants based on various factors. Responsible for the maintenance of a small server cluster including primary and fail-over web and database servers.</dd>
-            
-            <dt class="novacare">NovaCare / Developer / IT Manager / Murray, UT / 2008 - 2010</dt>
-            <dd>Integrated landing pages and various CRM platforms and payment processors. Maintained and improved legacy Visual Basic and Classic ASP fulfillment system. Implemented automation tools for managing high-volume printing and returns processing. Managed company-wide IT infrastructure and a small team of IT support personnel.</dd>
-            
+            {% for position in resume.experience %}
+            <dt>{{ position.company }} / {{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</dt>
+            <dd>{{ position.description[0] }}</dd>
+            {% endfor %}
+
+            {% if resume.extra|length %}
             <dt>Et. cetera</dt>
-            <dd class="etc">Proprietary CRM/CMS system designated <em>The Core</em>. Expanded feature-set, primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</dd>
-            <dd class="etc">Maintainer of open source community <em>Orkestra</em>. Responsible for multiple projects ranging from reporting bundles for Symfony, payment processing, and API consumption libraries.</dd>
+              {% for line in resume.extra %}
+            <dd class="etc">{{ line }}</dd>
+              {% endfor %}
+            {% endif %}
           </dl>
           <div class="spacer print-hidden"></div>
           <h3 class="print-hidden">Qualifications</h3>
           <dl class="dl-horizontal print-hidden">
             <dt>Primary strengths</dt>
-            <dd>PHP, MySQL, Javascript, HTML, CSS</dd>
+            <dd>{% for attr in resume.qualifications if attr.type == 'strength' %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
             
             <dt>Working knowledge</dt>
-            <dd>Go, Obj-C, C, Ruby, Python, Java, C#, MongoDB</dd>
+            <dd>{% for attr in resume.qualifications if attr.type == 'needs-improvement' %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
             
             <dt>Platforms</dt>
-            <dd>CentOS, Ubuntu, OS X, Apache, Nginx</dd>
+            <dd>{% for attr in resume.qualifications if attr.type == 'platform' %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
           </dl>
         </div>
       </div>

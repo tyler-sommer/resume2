@@ -4,5 +4,11 @@
     "require": {
         "nice/framework": "1.0.x-dev",
         "nice/twig": "1.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "TylerSommer\\Resume\\Tests\\": "tests/",
+            "TylerSommer\\Resume\\": "src/"
+        }
     }
 }

@@ -54,8 +54,8 @@
     <div class="container">
       <div class="row">
         <header class="centered">
-          <h1>Tyler Sommer</h1>
-          <p>Professional Software Developer</p>
+          <h1>{{ resume.name }}</h1>
+          <p>{{ resume.title }}</p>
         </header>
         <div class="social-icons">
           <a href="https://github.com/tyler-sommer" class="btn btn-round btn-clear btn-github"><i class="fa fa-github"></i></a>
@@ -81,10 +81,9 @@
           <div class="profile"><img src="{{ asset('img/profile.jpeg') }}" alt="profile"/></div>
         </div>
         <div class="col-md-9">
-          <p>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</p>
-          <p>During Christmas one year shortly after, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in problem solving.</p>
-          <p>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Six years later, and much is the same. I help architect medium-scale business management applications, solving business-specific needs in the most cost effective and efficient ways.</p>
-          <p>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. When I'm not busy coding, I'm learning how to be a dad or I might be playing Magic: The Gathering at the local card shop...</p>
+          {% for line in resume.profile %}
+          <p>{{ line }}</p>
+          {% endfor %}
         </div>
       </div>
     </div> 
@@ -98,36 +97,21 @@
         <p class="section-subtitle">Full-stack developer. Backend specialist.</p>
       </header>
       <div class="row">
+        {% for position in resume.experience %}
+          {% if loop.index0 < 3 %}
         <div class="col-md-4">
           <article class="experience">
             <header>
-              <h3>Terramar Labs</h3>
-              <p>Lead Developer / San Diego, CA / 2012 - Current</p>
+              <h3>{{ position.company }}</h3>
+              <p>{{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</p>
             </header>
-            <p>Built software for small to medium businesses to help manage their internal processes and bottom line. Developed reporting and analytics tools, customer management, truck route optimization system, mobile kiosk applications, and web services.</p>
-            <p>Designed, engineered, and contributed to many open source applications leveraged by Terramar Labs to manage code packages, code review, and payment processing.</p>
+            {% for line in position.description %}
+            <p>{{ line }}</p>
+            {% endfor %}
           </article>
         </div>
-        <div class="col-md-4">
-          <article class="experience">
-            <header>
-              <h3>PayRoll Innovations</h3>
-              <p>Lead Developer / South Jordan, UT / 2010 - 2012</p>
-            </header>
-            <p>Architected a payday advance loan processing system integrated with card issuing platforms. Implemented risk scoring algorithm to automatically qualify potential loan applicants based on various factors.</p>
-            <p>Responsible for the maintenance of a small server cluster including primary and fail-over web and database servers.</p>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article class="experience">
-            <header>
-              <h3>NovaCare</h3>
-              <p>Developer / IT Manager / Murray, UT / 2008 - 2010</p>
-            </header>
-            <p>Integrated landing pages and various CRM platforms and payment processors. Maintained and improved legacy Visual Basic and Classic ASP fulfillment system. Implemented automation tools for managing high-volume printing and returns processing.</p>
-            <p>Managed company-wide IT infrastructure and a small team of IT support personnel.</p>
-          </article>
-        </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </section>
@@ -197,9 +181,8 @@
       </header>
       <div class="row">
         <div class="col-sm-4 col-sm-offset-4 contact-info">
-          <p><i class="fa fa-fw fa-envelope-o"></i> contact@tylersommer.pro</p>
-          <p><i class="fa fa-fw fa-phone"></i> (801) 232-1478</p>
-          <p class="mailing-address"><i class="fa fa-fw fa-map-marker"></i> 4225 Oceanside Blvd #H #204<br> Oceanside, CA 92056</p>
+          <p><i class="fa fa-fw fa-envelope-o"></i> {{ resume.email }}</p>
+          <p><i class="fa fa-fw fa-phone"></i> {{ resume.phone }}</p>
         </div>
       </div>
     </div>

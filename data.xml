@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<resume>
+    <name>Tyler Sommer</name>
+    <phone>(801) 232-1478</phone>
+    <email>contact@tylersommer.pro</email>
+
+    <title>Professional Software Developer</title>
+    <description>Six years of professional software development experience in demanding, fast-paced environments. Focus primarily in backend systems: e-commerce, payment processing platforms, and business management software. Strengths include problem solving, communication, technical writing, and server management. Passionate about open source software.</description>
+
+    <profile>
+        <line>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</line>
+        <line>During Christmas one year shortly after, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in problem solving.</line>
+        <line>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Six years later, and much is the same. I help architect medium-scale business management applications, solving business-specific needs in the most cost effective and efficient ways.</line>
+        <line>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. When I'm not busy coding, I'm learning how to be a dad or I might be playing Magic: The Gathering at the local card shop...</line>
+    </profile>
+
+    <experience>
+        <position>
+            <company>Pocomos</company>
+            <title>VP of Technology / Senior Dev.</title>
+            <location>Provo, UT</location>
+            <from>2015</from>
+            <to/>
+            <description>
+                <line>Designed and built business and customer management software for service-based industries. Developed customer, truck routing, and sales team management systems.</line>
+                <line></line>
+            </description>
+        </position>
+
+        <position>
+            <company>Terramar Labs</company>
+            <title>Lead Developer</title>
+            <location>San Diego, CA</location>
+            <from>2012</from>
+            <to>2015</to>
+            <description>
+                <line>Built software for small to medium businesses to help manage their internal processes and bottom line. Developed reporting and analytics tools, mobile kiosk applications, and web services.</line>
+                <line>Engineered and contributed to many open source applications leveraged by Terramar Labs to manage code packages, code review, and payment processing.</line>
+            </description>
+        </position>
+
+        <position>
+            <company>PayRoll Innovations</company>
+            <title>Lead Developer</title>
+            <location>South Jordan, UT</location>
+            <from>2010</from>
+            <to>2012</to>
+            <description>
+                <line>Architected a payday advance loan processing system integrated with card issuing platforms. Implemented risk scoring algorithm to automatically qualify potential loan applicants based on various factors.</line>
+                <line>Responsible for the maintenance of a small server cluster including primary and fail-over web and database servers.</line>
+            </description>
+        </position>
+
+        <position>
+            <company>NovaCare</company>
+            <title>Developer / IT Manager</title>
+            <location>Murray, UT</location>
+            <from>2008</from>
+            <to>2010</to>
+            <description>
+                <line>Integrated landing pages and various CRM platforms and payment processors. Maintained and improved legacy Visual Basic and Classic ASP fulfillment system. Implemented automation tools for managing high-volume printing and returns processing.</line>
+                <line>Managed company-wide IT infrastructure and a small team of IT support personnel.</line>
+            </description>
+        </position>
+
+        <extra>Proprietary CRM/CMS system designated <em>The Core</em>. Expanded feature-set, primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
+        <extra>Maintainer of open source community <em>Orkestra</em>. Responsible for multiple projects ranging from reporting bundles for Symfony, payment processing, and API consumption libraries.</extra>
+    </experience>
+
+    <qualifications>
+        <attribute type="strength">PHP</attribute>
+        <attribute type="strength">MySQL</attribute>
+        <attribute type="strength">Javascript</attribute>
+        <attribute type="strength">HTML</attribute>
+        <attribute type="strength">CSS</attribute>
+        <attribute type="needs-improvement">Go</attribute>
+        <attribute type="needs-improvement">Objective-C</attribute>
+        <attribute type="needs-improvement">C</attribute>
+        <attribute type="needs-improvement">Ruby</attribute>
+        <attribute type="needs-improvement">Python</attribute>
+        <attribute type="needs-improvement">C#</attribute>
+        <attribute type="needs-improvement">Java</attribute>
+        <attribute type="platform">CentOS</attribute>
+        <attribute type="platform">Ubuntu</attribute>
+        <attribute type="platform">OS X</attribute>
+        <attribute type="platform">Apache</attribute>
+        <attribute type="platform">Nginx</attribute>
+    </qualifications>
+</resume>

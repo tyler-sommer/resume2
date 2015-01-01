@@ -6,10 +6,11 @@ use Symfony\Component\HttpFoundation\Response;
 use Nice\Application;
 use Nice\Extension\TwigExtension;
 use Nice\Router\RouteCollector;
+use TylerSommer\Resume\Transformer\SimpleXmlTransformer;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$env = 'prod';
+$env = 'dev';
 $app = new Application($env);
 
 $cacheDir = $app->getCacheDir();
@@ -35,7 +36,9 @@ $renderCachedPage = function(Request $request, $template) use ($app, $templateDi
     if (file_exists($cacheFile)) {
         $content = file_get_contents($cacheFile);
     } else {
-        $content = $app->get('twig')->render($template);
+        $transformer = new SimpleXmlTransformer();
+        $model = $transformer->transformFile(__DIR__.'/../data.xml');
+        $content = $app->get('twig')->render($template, array('resume' => $model));
         file_put_contents($cacheFile, $content);
     }
 
@@ -46,7 +49,7 @@ $renderCachedPage = function(Request $request, $template) use ($app, $templateDi
 
 $app->appendExtension(new TwigExtension($templateDir));
 $app->set('routes', function (RouteCollector $r) use ($renderCachedPage) {
-    $r->map('/', 'home', function (Request $request) use ($renderCachedPage) {
+    $r->map('/', 'home', function (Request $request, Application $app) use ($renderCachedPage) {
         return $renderCachedPage($request, 'index.html.twig');
     });
 
