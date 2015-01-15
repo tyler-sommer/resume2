@@ -5,4 +5,4 @@ My personal resume website.
 
 ---
 
-Copyright 2014 Tyler Sommer. All rights reserved.
+Copyright 2015 Tyler Sommer. All rights reserved.
