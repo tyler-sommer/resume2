@@ -2,8 +2,8 @@
     "name": "tyler-sommer/resume2",
     "description": "Tyler Sommer's Resume",
     "require": {
-        "nice/framework": "1.0.x-dev",
-        "nice/twig": "1.0.x-dev"
+        "nice/framework": "~1.1",
+        "nice/twig": "~1.0"
     },
     "autoload": {
         "psr-4": {
