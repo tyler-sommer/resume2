@@ -16,11 +16,20 @@
 
     <experience>
         <position>
+            <company>Rakuten Marketing</company>
+            <title>Data Engineer</title>
+            <location>Midvale, UT</location>
+            <from>2016</from>
+            <to/>
+            <description/>
+        </position>
+
+        <position>
             <company>Pronexis</company>
             <title>Senior Developer</title>
             <location>Spanish Fork, UT</location>
             <from>2015</from>
-            <to/>
+            <to>2016</to>
             <description>
                 <line>Designed and built business and customer management software for service-based industries. Developed customer, truck routing, and sales team management systems.</line>
                 <line>Responsible for maintaining and improving existing Symfony code-base. Implemented unit testing, integration testing, and continuous integration processes.</line>
@@ -68,18 +77,16 @@
     </experience>
 
     <qualifications>
-        <attribute type="strength">PHP</attribute>
+        <attribute type="strength">Go</attribute>
         <attribute type="strength">MySQL</attribute>
         <attribute type="strength">Javascript</attribute>
-        <attribute type="strength">HTML</attribute>
-        <attribute type="strength">CSS</attribute>
-        <attribute type="needs-improvement">Go</attribute>
+        <attribute type="strength">Ruby</attribute>
+        <attribute type="strength">PHP</attribute>
+        <attribute type="needs-improvement">Python</attribute>
+        <attribute type="needs-improvement">Java</attribute>
         <attribute type="needs-improvement">Objective-C</attribute>
         <attribute type="needs-improvement">C</attribute>
-        <attribute type="needs-improvement">Ruby</attribute>
-        <attribute type="needs-improvement">Python</attribute>
         <attribute type="needs-improvement">C#</attribute>
-        <attribute type="needs-improvement">Java</attribute>
         <attribute type="platform">CentOS</attribute>
         <attribute type="platform">Ubuntu</attribute>
         <attribute type="platform">OS X</attribute>
