@@ -10,8 +10,8 @@
     <profile>
         <line>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</line>
         <line>During Christmas one year shortly after, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in problem solving.</line>
-        <line>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Six years later, and much is the same. I help architect medium-scale business management applications, solving business-specific needs in the most cost effective and efficient ways.</line>
-        <line>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. When I'm not busy coding, I'm learning how to be a dad or I might be playing Magic: The Gathering at the local card shop...</line>
+        <line>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Nearly eight years later, and a lot has changed. I help manage huge amounts of data and write programs to transform and aggregate data into meaningful reports.</line>
+        <line>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. These days, I spend most of my time learning how to be a dad. Otherwise you'll find me coding, tinkering, and learning new things... or watching Rick and Morty.</line>
     </profile>
 
     <experience>
@@ -21,7 +21,9 @@
             <location>Midvale, UT</location>
             <from>2016</from>
             <to/>
-            <description>Developed processes for managing large amounts of data. Used Hadoop to perform analysis on stored data, providing the underlying data for business reports and decision making.</description>
+            <description>
+                <line>Developed processes for managing large amounts of data. Used Hadoop to perform analysis on stored data, providing the underlying data for business reports and decision making.</line>
+            </description>
         </position>
 
         <position>
