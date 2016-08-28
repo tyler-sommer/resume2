@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="resume" type="resumeType"/>
+  <xs:complexType name="qualificationsType">
+    <xs:sequence>
+      <xs:element type="attributeType" name="attribute" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="profileType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="section" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="positionType">
+    <xs:sequence>
+      <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="company"/>
+      <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="title"/>
+      <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="location"/>
+      <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="from"/>
+      <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="to"/>
+      <xs:element type="descriptionType" minOccurs="1" maxOccurs="1" name="description"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="descriptionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="section" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="attributeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="platform"/>
+              <xs:enumeration value="strength"/>
+              <xs:enumeration value="needs-improvement"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="experienceType">
+    <xs:sequence>
+      <xs:element type="positionType" name="position" maxOccurs="unbounded" minOccurs="1"/>
+      <xs:element type="xs:string" name="extra" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resumeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="phone" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="email" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="title" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="description" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="profileType" name="profile" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="experienceType" name="experience" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="qualificationsType" name="qualifications" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

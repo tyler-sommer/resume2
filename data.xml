@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<resume>
+<resume xmlns="https://tylersommer.pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://tylersommer.pro data.xsd">
     <name>Tyler Sommer</name>
     <phone>(801) 232-1478</phone>
     <email>contact@tylersommer.pro</email>
 
     <title>Professional Software Developer</title>
-    <description>Seven years of professional software development experience in demanding, fast-paced environments. Focus primarily in backend systems: e-commerce, payment processing platforms, and business management software. Strengths include problem solving, communication, technical writing, and server management. Passionate about open source software.</description>
+    <description>Eight years of professional software development experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, e-commerce, payment processing platforms, and business management software. Strengths include problem solving, communication, technical writing, and server management. Passionate about open source software.</description>
 
     <profile>
-        <line>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</line>
-        <line>During Christmas one year shortly after, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in problem solving.</line>
-        <line>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Nearly eight years later, and a lot has changed. I help manage huge amounts of data and write programs to transform and aggregate data into meaningful reports.</line>
-        <line>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. These days, I spend most of my time learning how to be a dad. Otherwise you'll find me coding, tinkering, and learning new things... or watching Rick and Morty.</line>
+        <section>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</section>
+        <section>During Christmas one year shortly after, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in problem solving.</section>
+        <section>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Nearly eight years later, and a lot has changed. I help manage huge amounts of data and write programs to transform and aggregate data into meaningful reports.</section>
+        <section>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. These days, I spend most of my time learning how to be a dad. Otherwise you'll find me coding, tinkering, and learning new things... or watching Rick and Morty.</section>
     </profile>
 
     <experience>
@@ -22,7 +22,7 @@
             <from>2016</from>
             <to/>
             <description>
-                <line>Developed processes for managing large amounts of data. Used Hadoop to perform analysis on stored data, providing the underlying data for business reports and decision making.</line>
+                <section>Developed processes for managing large amounts of data. Used Hadoop and Spark to perform analysis on stored data, providing the underlying data for business reports and decision making.</section>
             </description>
         </position>
 
@@ -33,8 +33,8 @@
             <from>2015</from>
             <to>2016</to>
             <description>
-                <line>Designed and built business and customer management software for service-based industries. Developed customer, truck routing, and sales team management systems.</line>
-                <line>Responsible for maintaining and improving existing Symfony code-base. Implemented unit testing, integration testing, and continuous integration processes.</line>
+                <section>Designed and built business and customer management software for service-based industries. Developed customer, truck routing, and sales team management systems.</section>
+                <section>Responsible for maintaining and improving existing Symfony code-base. Implemented unit testing, integration testing, and continuous integration processes.</section>
             </description>
         </position>
 
@@ -45,8 +45,8 @@
             <from>2012</from>
             <to>2015</to>
             <description>
-                <line>Built software for small to medium businesses to help manage their internal processes and bottom line. Developed reporting and analytics tools, mobile kiosk applications, and web services.</line>
-                <line>Engineered and contributed to many open source applications leveraged by Terramar Labs to manage code packages, code review, and payment processing.</line>
+                <section>Built software for small to medium businesses to help manage their internal processes and bottom line. Developed reporting and analytics tools, mobile kiosk applications, and web services.</section>
+                <section>Engineered and contributed to many open source applications leveraged by Terramar Labs to manage code packages, code review, and payment processing.</section>
             </description>
         </position>
 
@@ -57,8 +57,8 @@
             <from>2010</from>
             <to>2012</to>
             <description>
-                <line>Architected a payday advance loan processing system integrated with card issuing platforms. Implemented risk scoring algorithm to automatically qualify potential loan applicants based on various factors.</line>
-                <line>Responsible for the maintenance of a small server cluster including primary and fail-over web and database servers.</line>
+                <section>Architected a payday advance loan processing system integrated with card issuing platforms. Implemented risk scoring algorithm to automatically qualify potential loan applicants based on various factors.</section>
+                <section>Responsible for the maintenance of a small server cluster including primary and fail-over web and database servers.</section>
             </description>
         </position>
 
@@ -69,29 +69,37 @@
             <from>2008</from>
             <to>2010</to>
             <description>
-                <line>Integrated landing pages and various CRM platforms and payment processors. Maintained and improved legacy Visual Basic and Classic ASP fulfillment system. Implemented automation tools for managing high-volume printing and returns processing.</line>
-                <line>Managed company-wide IT infrastructure and a small team of IT support personnel.</line>
+                <section>Integrated landing pages and various CRM platforms and payment processors. Maintained and improved legacy Visual Basic and Classic ASP fulfillment system. Implemented automation tools for managing high-volume printing and returns processing.</section>
+                <section>Managed company-wide IT infrastructure and a small team of IT support personnel.</section>
             </description>
         </position>
 
-        <extra>Proprietary CRM/CMS system designated <em>The Core</em>. Expanded feature-set, primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
-        <extra>Maintainer of open source community <em>Orkestra</em>. Responsible for multiple projects ranging from reporting bundles for Symfony, payment processing, and API consumption libraries.</extra>
+        <extra><![CDATA[Proprietary CRM/CMS system designated <em>The Core</em>. Expanded feature-set, primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.]]></extra>
+        <extra><![CDATA[Maintainer of open source community <em>Orkestra</em>. Responsible for multiple projects ranging from reporting bundles for Symfony, payment processing, and API consumption libraries.]]></extra>
     </experience>
 
     <qualifications>
         <attribute type="strength">Go</attribute>
+        <attribute type="strength">Scala</attribute>
+        <attribute type="strength">Ruby</attribute>
         <attribute type="strength">MySQL</attribute>
         <attribute type="strength">Javascript</attribute>
-        <attribute type="strength">Ruby</attribute>
         <attribute type="strength">PHP</attribute>
-        <attribute type="needs-improvement">Python</attribute>
         <attribute type="needs-improvement">Java</attribute>
-        <attribute type="needs-improvement">Objective-C</attribute>
+        <attribute type="needs-improvement">PostgreSQL</attribute>
         <attribute type="needs-improvement">C</attribute>
+        <attribute type="needs-improvement">C++</attribute>
+        <attribute type="needs-improvement">Python</attribute>
+        <attribute type="needs-improvement">Objective-C</attribute>
         <attribute type="needs-improvement">C#</attribute>
+        <attribute type="platform">Hadoop</attribute>
+        <attribute type="platform">Spark</attribute>
+        <attribute type="platform">Hive</attribute>
+        <attribute type="platform">HBase</attribute>
         <attribute type="platform">CentOS</attribute>
         <attribute type="platform">Ubuntu</attribute>
         <attribute type="platform">OS X</attribute>
+        <attribute type="platform">AVR</attribute>
         <attribute type="platform">Apache</attribute>
         <attribute type="platform">Nginx</attribute>
     </qualifications>

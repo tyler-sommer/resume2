@@ -45,9 +45,28 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.registerTask('install-deps', function() {
+    var exec = require('child_process').execSync;
+    var result = exec("composer install -o", { encoding: 'utf8' });
+    grunt.log.writeln(result);
+  });
+  
+  grunt.registerTask('build-cache', function() {
+	var exec = require('child_process').execSync;
+    var result = exec("php build-cache.php", { encoding: 'utf8' });
+    grunt.log.writeln(result);
+  });
+
+  grunt.registerTask('clear-cache', function() {
+    var exec = require('child_process').execSync;
+    var result = exec("rm -rf cache/*", { encoding: 'utf8' });
+    grunt.log.writeln(result);
+  });
+
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.registerTask('default', ['concat:css', 'cssmin:css', 'concat:js', 'uglify:js']);
+  grunt.registerTask('deploy', ['install-deps','clear-cache','build-cache']);
 };

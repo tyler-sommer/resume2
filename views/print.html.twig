@@ -47,7 +47,7 @@
             {% if resume.extra|length %}
             <dt>Et. cetera</dt>
               {% for line in resume.extra %}
-            <dd class="etc">{{ line }}</dd>
+            <dd class="etc">{{ line|raw }}</dd>
               {% endfor %}
             {% endif %}
           </dl>
