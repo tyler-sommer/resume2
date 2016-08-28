@@ -26,8 +26,8 @@ class SimpleXmlTransformer
         $model->title = (string) $data->title;
         $model->description = (string) $data->description;
 
-        foreach ($data->profile->line as $line) {
-            $model->profile[] = (string) $line;
+        foreach ($data->profile->section as $section) {
+            $model->profile[] = (string) $section;
         }
 
         foreach ($data->experience->position as $datum) {
@@ -37,15 +37,15 @@ class SimpleXmlTransformer
             $position->location = (string) $datum->location;
             $position->from = (string) $datum->from;
             $position->to = (string) $datum->to;
-            foreach ($datum->description->line as $line) {
-                $position->description[] = (string) $line;
+            foreach ($datum->description->section as $section) {
+                $position->description[] = (string) $section;
             }
 
             $model->experience[] = $position;
         }
 
-        foreach ($data->experience->extra as $line) {
-            $model->extra[] = (string) $line;
+        foreach ($data->experience->extra as $section) {
+            $model->extra[] = (string) $section;
         }
 
         foreach ($data->qualifications->attribute as $datum) {
