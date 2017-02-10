@@ -22,7 +22,8 @@
             <from>2016</from>
             <to/>
             <description>
-                <section>Developed processes for managing large amounts of data. Used Hadoop and Spark to perform analysis on stored data, providing the underlying data for business reports and decision making.</section>
+                <section>Developed and improved Hadoop and Hive processes and related tooling for managing large amounts of data. Performed various analyses, providing the underlying data for business reports and decision making.</section>
+                <section>Designed and implemented Spark and Spark Streaming data processing framework, processes, and related tools.</section>
             </description>
         </position>
 
