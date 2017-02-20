@@ -1047,6 +1047,10 @@ label.valid {
   color: #d3492c;
 }
 
+.btn-blog:hover {
+  color: #0088cc;
+}
+
 
 .left {
   float: left;
