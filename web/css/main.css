@@ -88,12 +88,12 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
 
 #profile.print dd {
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 #profile.print .spacer {
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 #profile.print header .spacer {
@@ -116,12 +116,13 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
 
   #profile.print .section-title {
     margin: 0 auto;
+    padding-top: 10px;
   }
 
   #profile.print .spacer {
     display: block !important;
     background: #08c !important;
-    margin: 20px auto;
+    margin: 12px auto;
   }
 
   #profile.print h3 {
