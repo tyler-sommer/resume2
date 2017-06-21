@@ -33,7 +33,7 @@ class Resume
     public $extra = array();
 
     /**
-     * @var array|Qualification
+     * @var array|Qualification[]
      */
     public $qualifications = array();
 }

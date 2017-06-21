@@ -5,12 +5,12 @@
     <email>contact@tylersommer.pro</email>
 
     <title>Professional Software Developer</title>
-    <description>Eight years of professional software development experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, e-commerce, payment processing platforms, and business management software. Strengths include problem solving, communication, technical writing, and server management. Passionate about open source software.</description>
+    <description>Nine years of professional software development experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, e-commerce, payment processing platforms, and business management software. Strengths include problem solving, communication, technical writing, and server management. Passionate about open source software.</description>
 
     <profile>
         <section>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</section>
         <section>During Christmas one year shortly after, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in problem solving.</section>
-        <section>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Eight years later, and I now help build infrastructure to manage the storing and processing of huge amounts of data for aggregation into meaningful reports.</section>
+        <section>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Nine years later, and I now help build infrastructure to manage the storing and processing of huge amounts of data for aggregation into meaningful reports.</section>
         <section>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. These days, I spend most of my time learning how to be a dad. Otherwise you'll find me coding, tinkering, and learning new things... or watching Rick and Morty.</section>
     </profile>
 
@@ -75,8 +75,10 @@
             </description>
         </position>
 
-        <extra><![CDATA[Proprietary CRM/CMS system designated <em>The Core</em>. Expanded feature-set, primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.]]></extra>
-        <extra><![CDATA[Maintainer of open source community <em>Orkestra</em>. Responsible for multiple projects ranging from reporting bundles for Symfony, payment processing, and API consumption libraries.]]></extra>
+        <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
+        <extra>Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
+        <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was presented to several high profile clients with great reception.</extra>
+        <extra>Maintainer of multiple open source projects. Responsible for libraries and applications handling payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
     </experience>
 
     <qualifications>
@@ -92,10 +94,12 @@
         <attribute type="needs-improvement">Objective-C</attribute>
         <attribute type="needs-improvement">C</attribute>
         <attribute type="needs-improvement">C++</attribute>
+        <attribute type="needs-improvement">Haskell</attribute>
         <attribute type="needs-improvement">Python</attribute>
         <attribute type="needs-improvement">C#</attribute>
         <attribute type="platform">OS X</attribute>
         <attribute type="platform">CentOS</attribute>
+        <attribute type="platform">Debian</attribute>
         <attribute type="platform">Ubuntu</attribute>
         <attribute type="platform">iOS</attribute>
         <attribute type="platform">AVR</attribute>
