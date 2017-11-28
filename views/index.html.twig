@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tyler Sommer - Resume</title>
-  <meta name="description" content="Tyler Sommer's Online Resume">
+  <title>Resume - {{ resume.name }}</title>
+  <meta name="description" content="{{ resume.name }}'s Online Resume">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Tyler Sommer">
+  <meta name="author" content="{{ resume.name }}">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   
@@ -14,7 +14,7 @@
   <link href="//cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="{{  asset('css/app.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
   
   <!--[if lt IE 9]>
   <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -75,7 +75,7 @@
       <header class="section-header">
         <h2 class="section-title">Personal Profile</h2>
         <div class="spacer"></div>
-        <p class="section-subtitle">"Leet Geek" from Salt Lake City.</p>
+        <p class="section-subtitle">Geek from Salt Lake City.</p>
       </header>
       <div class="row">
         <div class="col-md-3">
@@ -95,7 +95,7 @@
       <header class="section-header">
         <h2 class="section-title"><span>Experience</span></h2>
         <div class="spacer"></div>
-        <p class="section-subtitle">Full-stack developer. Backend specialist.</p>
+        <p class="section-subtitle">Full-stack engineer. Backend specialist.</p>
       </header>
       <div class="row">
         {% for position in resume.experience %}
