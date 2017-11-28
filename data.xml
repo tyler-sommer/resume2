@@ -4,26 +4,26 @@
     <phone>(801) 232-1478</phone>
     <email>contact@tylersommer.pro</email>
 
-    <title>Professional Software Developer</title>
-    <description>Nine years of professional software development experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, e-commerce, payment processing platforms, and business management software. Strengths include problem solving, communication, technical writing, and server management. Passionate about open source software.</description>
+    <title>Professional Software Engineer</title>
+    <description>Nine years of professional software engineering experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, e-commerce, payment processing platforms, and distributed systems. Strengths include problem solving, communication, technical writing, and systems administration. Passionate about open source software.</description>
 
     <profile>
         <section>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</section>
-        <section>During Christmas one year shortly after, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in problem solving.</section>
-        <section>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Nine years later, and I now help build infrastructure to manage the storing and processing of huge amounts of data for aggregation into meaningful reports.</section>
-        <section>Computing is a major passion of mine. I'm intrigued by all the wonderful impossibilities that become possible with a little bit of code. These days, I spend most of my time learning how to be a dad. Otherwise you'll find me coding, tinkering, and learning new things... or watching Rick and Morty.</section>
+        <section>For Christmas a year or so later, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in software engineering.</section>
+        <section>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Nine years later and I'm building resilient, distributed systems that operate on a global scale.</section>
+        <section>Computing is a major passion of mine. I am constantly fascinated by all aspects of software engineering. I'm always in search of knowledge and application. These days, I spend most of my time learning how to be a dad. Otherwise, you'll find me coding, tinkering, and learning new things... or watching Rick and Morty.</section>
     </profile>
 
     <experience>
         <position>
             <company>Rakuten Marketing</company>
-            <title>Data Engineer</title>
+            <title>Software Engineer</title>
             <location>Midvale, UT</location>
             <from>2016</from>
             <to/>
             <description>
-                <section>Developed and improved Hadoop and Hive processes and related tooling for managing large amounts of data. Performed various analyses, providing the underlying data for business reports and decision making.</section>
-                <section>Designed and implemented Spark and Spark Streaming data processing framework, processes, and related tools.</section>
+                <section>Responsible for maintenance, modernization, and new feature development for a distributed platform deployed in all parts of the world. Developed automated integrated testing framework to efficiently test the entire platform at scale.</section>
+                <section>Developed and improved Hadoop, Hive, and Spark processes and related tooling for processing large amounts of data. Designed and developed Spark Streaming framework and related tooling.</section>
             </description>
         </position>
 
@@ -77,19 +77,18 @@
 
         <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
         <extra>Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
-        <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was presented to several high profile clients with great reception.</extra>
+        <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
         <extra>Maintainer of multiple open source projects. Responsible for libraries and applications handling payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
     </experience>
 
     <qualifications>
         <attribute type="strength">Go</attribute>
+        <attribute type="strength">Java</attribute>
         <attribute type="strength">Scala</attribute>
         <attribute type="strength">Ruby</attribute>
-        <attribute type="strength">PostgreSQL</attribute>
-        <attribute type="strength">MySQL</attribute>
+        <attribute type="strength">SQL</attribute>
         <attribute type="strength">Javascript</attribute>
         <attribute type="strength">PHP</attribute>
-        <attribute type="needs-improvement">Java</attribute>
         <attribute type="needs-improvement">Swift</attribute>
         <attribute type="needs-improvement">Objective-C</attribute>
         <attribute type="needs-improvement">C</attribute>
@@ -97,17 +96,14 @@
         <attribute type="needs-improvement">Haskell</attribute>
         <attribute type="needs-improvement">Python</attribute>
         <attribute type="needs-improvement">C#</attribute>
-        <attribute type="platform">OS X</attribute>
-        <attribute type="platform">CentOS</attribute>
-        <attribute type="platform">Debian</attribute>
-        <attribute type="platform">Ubuntu</attribute>
-        <attribute type="platform">iOS</attribute>
-        <attribute type="platform">AVR</attribute>
-        <attribute type="platform">Spark</attribute>
+        <attribute type="platform">AWS/GCP</attribute>
+        <attribute type="platform">Linux</attribute>
+        <attribute type="platform">Java EE</attribute>
+        <attribute type="platform">PostgreSQL</attribute>
+        <attribute type="platform">MySQL</attribute>
+        <attribute type="platform">Apache Spark</attribute>
         <attribute type="platform">Hadoop</attribute>
         <attribute type="platform">Hive</attribute>
-        <attribute type="platform">HBase</attribute>
-        <attribute type="platform">Apache</attribute>
-        <attribute type="platform">Nginx</attribute>
+        <attribute type="platform">Cassandra</attribute>
     </qualifications>
 </resume>
