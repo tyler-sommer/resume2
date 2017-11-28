@@ -23,7 +23,7 @@
             <to/>
             <description>
                 <section>Responsible for maintenance, modernization, and new feature development for a distributed platform deployed in all parts of the world. Developed automated integrated testing framework to efficiently test the entire platform at scale.</section>
-                <section>Developed and improved Hadoop, Hive, and Spark processes and related tooling for processing large amounts of data. Designed and developed Spark Streaming framework and related tooling.</section>
+                <section>Developed and improved Hadoop, Hive, and Spark processes and related tooling for processing large amounts of data. Designed and developed Spark Streaming applications and related tooling.</section>
             </description>
         </position>
 
@@ -75,11 +75,106 @@
             </description>
         </position>
 
-        <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
         <extra>Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
-        <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
         <extra>Maintainer of multiple open source projects. Responsible for libraries and applications handling payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
+        <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
+        <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
     </experience>
+    
+    <projects>
+        <project>
+            <name>Packages</name>
+            <blurb>Composer package management made simple.</blurb>
+            <link href="https://github.com/terramar-labs/packages"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="http://docs.terramarlabs.com"><![CDATA[<i class="fa fa-book"></i> Documentation]]></link>
+            <description>
+                <section>Packages is a private Composer repository manager with GitHub and GitLab integration. Originally developed for Terramar Labs' internal work, we open sourced the project and maintain it to this day.</section>
+                <section>This project is a neat example of using webhooks to integrate with external services as well as a decently powerful continuous integration/deployment platform.</section>
+            </description>
+        </project>
+
+        <project>
+            <name>Stick</name>
+            <blurb>Golang port of the Twig templating engine.</blurb>
+            <description>
+                <section>Stick is a Go language port of the Twig templating engine. Stick supports all Twig syntax though full Twig-compatibility is incomplete. Stick itself is feature complete and used in many of my personal projects.</section>
+                <section>This project started out from a need for a more powerful templating language than what was provided at the time by the Go standard library.</section>
+            </description>
+            <link href="https://github.com/tyler-sommer/stick"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+        </project>
+
+        <project>
+            <name>transpond</name>
+            <blurb>GPS tracker and handset for model rockets.</blurb>
+            <description>
+                <section>transpond is an Arduino application consisting of two parts: the transponder and the handset. The transponder is placed in the payload section of a model rocket and transmits data continuously to the handset. Sensors include GPS, Accel/Gyro/Magneto, voltage, and temperature.</section>
+            </description>
+            <link href="https://github.com/veonik/transpond"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+        </project>
+        
+        <project>
+            <name>squIRCy2</name>
+            <blurb>An IRC bot that is scriptable with javascript!</blurb>
+            <description>
+                <section>squIRCy2 is an IRC bot written in Go that embeds a javascript VM that allows userland scripting via the filesystem or a web interface.</section>
+            </description>
+            <link href="https://github.com/tyler-sommer/squircy2"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="http://squircy.com"><![CDATA[<i class="fa fa-book"></i> Documentation]]></link>
+        </project>
+        
+        <project>
+            <name>MOTKI</name>
+            <blurb>A suite of apps tailored for corp management in EVE online.</blurb>
+            <description>
+                <section>The MOTKI project as a whole is a suite of software designed around managing a corporation in the video game EVE Online. MOTKI is a web application that integrates with many different data sources using the EVE Single Sign-On API to gather detailed information.</section>
+            </description>
+            <link href="https://github.com/motki"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="https://motki.org"><![CDATA[<i class="fa fa-bookmark"></i> MOTKI Homepage]]></link>
+        </project>
+
+        <project>
+            <name>VeonikBlogBundle</name>
+            <blurb>A Symfony bundle providing CMS and blog functionality.</blurb>
+            <description>
+                <section>VeonikBlogBundle is a Symfony bundle that has all the necessary functionality for quickly building a blog or CMS. Features include WYSIWYG editing, dynamic menus, user accounts, file uploading, and syntax highlighting for code snippets.</section>
+                <section>VeonikBlogBundle is largely what powers my personal blog, Tyler Sommer dot com.</section>
+            </description>
+            <link href="https://github.com/veonik/VeonikBlogBundle"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+        </project>
+
+        <project>
+            <name>Nice</name>
+            <blurb>A Nice PHP microframework.</blurb>
+            <description>
+                <section>Nice is a microframework built using Symfony components. There are several library integrations, for example, with Doctrine DBAL and ORM, Twig, and more.</section>
+                <section>Nice makes use of many Symfony internals, namely the HTTP Kernel and Service Containers. Instead of massive configuration files, Nice just uses PHP code to interact with the Service Container-- but still, the patterns around the Symfony components are largely reusable when prototype turns into production.</section>
+            </description>
+            <link href="https://github.com/nice-php/framework"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="http://niceframework.com"><![CDATA[<i class="fa fa-bookmark"></i> Website]]></link>
+            <link href="http://docs.niceframework.com"><![CDATA[<i class="fa fa-book"></i> Documentation]]></link>
+        </project>
+
+        <project>
+            <name>Orkestra Transactor</name>
+            <blurb>An intelligent platform for monetary processing applications.</blurb>
+            <description>
+                <section>The Transactor is another project that Terramar Labs' built and open-sourced. Though the project is showing its age, it has proven a reliable library that several production systems still use in practice.</section>
+                <section>Orkestra actually has several projects that were open-sourced and utilized pretty heavily by the team at Terramar Labs. Though the projects never achieved much notoriety, they have been mostly stable and supported since about 2012.</section>
+            </description>
+            <link href="https://github.com/orkestra/orkestra-transactor"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="https://github.com/orkestra"><![CDATA[<i class="fa fa-users"></i> Org GitHub]]></link>
+        </project>
+
+        <project>
+            <name>Tyler Sommer dot com</name>
+            <blurb>My personal website.</blurb>
+            <description>
+                <section>Tyler Sommer dot com is my most successful and long-running attempt at maintaining a blog. The application is built using Symfony and Doctrine, but still running on Symfony 2.8 and Bootstrap 2 it is starting to show signs of age.</section>
+            </description>
+            <link href="https://github.com/tyler-sommer/TylerSommerdotcom"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="https://tylersommer.com"><![CDATA[<i class="fa fa-bookmark"></i> Tyler Sommer dot com]]></link>
+        </project>
+    </projects>
 
     <qualifications>
         <attribute type="strength">Go</attribute>
@@ -96,8 +191,10 @@
         <attribute type="needs-improvement">Haskell</attribute>
         <attribute type="needs-improvement">Python</attribute>
         <attribute type="needs-improvement">C#</attribute>
-        <attribute type="platform">AWS/GCP</attribute>
+        <attribute type="platform">AWS</attribute>
+        <attribute type="platform">GCP</attribute>
         <attribute type="platform">Linux</attribute>
+        <attribute type="platform">Docker</attribute>
         <attribute type="platform">Java EE</attribute>
         <attribute type="platform">PostgreSQL</attribute>
         <attribute type="platform">MySQL</attribute>

@@ -2,15 +2,22 @@
 
 namespace TylerSommer\Resume\Transformer;
 
+use TylerSommer\Resume\Model\Image;
+use TylerSommer\Resume\Model\Link;
 use TylerSommer\Resume\Model\Position;
+use TylerSommer\Resume\Model\Project;
 use TylerSommer\Resume\Model\Qualification;
 use TylerSommer\Resume\Model\Resume;
 
+/**
+ * SimpleXmlTransformer transforms valid resume XML into PHP objects.
+ */
 class SimpleXmlTransformer
 {
     /**
-     * @param string $filename
+     * Transform an XML file into the logical model for the application.
      *
+     * @param string $filename
      * @return Resume
      */
     public function transformFile($filename)
@@ -31,17 +38,11 @@ class SimpleXmlTransformer
         }
 
         foreach ($data->experience->position as $datum) {
-            $position = new Position();
-            $position->company = (string) $datum->company;
-            $position->title = (string) $datum->title;
-            $position->location = (string) $datum->location;
-            $position->from = (string) $datum->from;
-            $position->to = (string) $datum->to;
-            foreach ($datum->description->section as $section) {
-                $position->description[] = (string) $section;
-            }
+            $model->experience[] = $this->transformPosition($datum);
+        }
 
-            $model->experience[] = $position;
+        foreach ($data->projects->project as $datum) {
+            $model->projects[] = $this->transformProject($datum);
         }
 
         foreach ($data->experience->extra as $section) {
@@ -57,5 +58,57 @@ class SimpleXmlTransformer
         }
 
         return $model;
+    }
+
+    /**
+     * Transforms XML representing a position into a Position model.
+     *
+     * @param \SimpleXMLElement $datum
+     * @return Position
+     */
+    private function transformPosition(\SimpleXMLElement $datum) {
+        $position = new Position();
+        $position->company = (string) $datum->company;
+        $position->title = (string) $datum->title;
+        $position->location = (string) $datum->location;
+        $position->from = (string) $datum->from;
+        $position->to = (string) $datum->to;
+        foreach ($datum->description->section as $section) {
+            $position->description[] = (string) $section;
+        }
+        return $position;
+    }
+
+    /**
+     * Transforms XML representing a project into a Project model.
+     *
+     * @param \SimpleXMLElement $datum
+     * @return Project
+     */
+    private function transformProject(\SimpleXMLElement $datum) {
+        $project = new Project();
+        $project->name = (string) $datum->name;
+        $project->blurb = (string) $datum->blurb;
+        foreach ($datum->description->section as $section) {
+            $project->description[] = (string) $section;
+        }
+
+        foreach ($datum->link as $rawLink) {
+            $link = new Link();
+            $link->href = (string) $rawLink->attributes()->href;
+            $link->text = (string) $rawLink;
+            $project->links[] = $link;
+        }
+
+        foreach ($datum->image as $rawImage) {
+            $image = new Image();
+            $image->src = (string) $rawImage->attributes()->src;
+            $image->alt = (string) $rawImage->attributes()->alt;
+            $image->title = (string) $rawImage->attributes()->title;
+            $image->text = (string) $rawImage;
+            $project->images[] = $image;
+        }
+
+        return $project;
     }
 }
