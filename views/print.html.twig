@@ -46,9 +46,8 @@
 
 {% if resume.extra|length %}
             <dt>Et cetera</dt>
-{% for line in resume.extra|slice(0, 2) %}
+{% set line = resume.extra[0] %}
             <dd class="etc">{{ line|raw }}</dd>
-{% endfor %}
 {% endif %}
           </dl>
           <div class="spacer print-hidden"></div>

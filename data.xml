@@ -16,11 +16,22 @@
 
     <experience>
         <position>
+            <company>Minim</company>
+            <title>Full-stack Engineer</title>
+            <location>Midvale, UT</location>
+            <from>2018</from>
+            <to/>
+            <description>
+                <section>Responsible for building and scaling products geared toward home network and IoT management and security. Improved existing reporting capabilities and behind-the-scenes data aggregation and management.</section>
+            </description>
+        </position>
+
+        <position>
             <company>Rakuten Marketing</company>
             <title>Software Engineer</title>
             <location>Midvale, UT</location>
             <from>2016</from>
-            <to/>
+            <to>2018</to>
             <description>
                 <section>Responsible for maintenance, modernization, and new feature development for a distributed platform deployed in all parts of the world. Developed automated integrated testing framework to efficiently test the entire platform at scale.</section>
                 <section>Developed and improved Hadoop, Hive, and Spark processes and related tooling for processing large amounts of data. Designed and developed Spark Streaming applications and related tooling.</section>
@@ -75,8 +86,8 @@
             </description>
         </position>
 
-        <extra>Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
         <extra>Maintainer of multiple open source projects. Responsible for libraries and applications handling payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
+        <extra>Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
         <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
         <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
     </experience>
@@ -179,10 +190,10 @@
     <qualifications>
         <attribute type="strength">Go</attribute>
         <attribute type="strength">Java</attribute>
-        <attribute type="strength">Scala</attribute>
         <attribute type="strength">Ruby</attribute>
         <attribute type="strength">SQL</attribute>
         <attribute type="strength">Javascript</attribute>
+        <attribute type="strength">Scala</attribute>
         <attribute type="strength">PHP</attribute>
         <attribute type="needs-improvement">Swift</attribute>
         <attribute type="needs-improvement">Objective-C</attribute>
