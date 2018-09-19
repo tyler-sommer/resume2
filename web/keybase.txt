@@ -1,0 +1,89 @@
+==================================================================
+https://keybase.io/veonik
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tylersommer.pro
+  * I am veonik (https://keybase.io/veonik) on keybase.
+  * I have a public key with fingerprint 06F9 14D0 3AA9 40AA 036C  50AA C09C 0105 00DB D008
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f2bfafd8e78c720001610ac195244de0d30cd45904a3db5bf9a0d8a8343a7cd50a",
+      "fingerprint": "06f914d03aa940aa036c50aac09c010500dbd008",
+      "host": "keybase.io",
+      "key_id": "c09c010500dbd008",
+      "kid": "0101093d77c4bce338d0b719296e141755b46c37b9869014213551e2c010709f40980a",
+      "uid": "ff03e7e41619b701ae8b847d7c662f19",
+      "username": "veonik"
+    },
+    "merkle_root": {
+      "ctime": 1525486434,
+      "hash_meta": "b1d9dc344e95de191baf4b869b0cc83555000f26649b5a21856b09c88d70cd99",
+      "seqno": 2486800
+    },
+    "revoke": {
+      "sig_ids": [
+        "69922f4a8726d3070d4d7ddb6714673cc0c0cfb50c04208fed2712ec53a777780f"
+      ]
+    },
+    "service": {
+      "hostname": "tylersommer.pro",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1525486514,
+  "expire_in": 157680000,
+  "prev": "3ca457e16efbc2d9f44f95f8e51df678b70a767e49571683a0a6873a276a5024",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMQBAnicbVMNbBRFGL3+yq9gpa0FQbqIlgZwZnd2Z/eKUAumREhTNP7R4jG7M3td
+r7099o6DAhWQWA0IIqWAtUVqSRPKQdCCUoFgK/5ANRWhICCiIhwSSkxUoqZQZxuI
+MXEn2cnuvu9973tv58jQJM+ghI/rE1I8574ekNDZsWihZ27Pve8vFXSbVgrepUKA
+9W+snLJwxBewqOAVABSBKeomManKsGpgEQAAFQiIATVZRIgyQCVgUCRrABGJ6rJu
+agRQlagSkgg2qAyIMFEwraCfOSHHCkZcWsXUIKJAIkRDgBAgKQbHEQNoBoBABoDq
+FACVF5bZYbeCi9NJmE22bP6OP/j65f0P/o5uvjSJYmwg3WCSpFKgY6iJmsIggliW
+daQYEtY1VdEARCKUZBky0WXDQDMR0NR+3Qv76UwTSAwzxCfXdAwgYaquIkyxoSii
+CTUXGGZOkFQwjo4yO2gFhKqJQgVzAuXM59h2xLXWiFguAMqijFQFSYiPR8JlvgoW
+IbxOh1SjhoQQ02TKoAZ1YiKdC9SBYahcIJ+Tp6EoSNNlIkJVVnRugKpSzBPQXBVh
+tiBoC16R06sAcAUOi9oB5jYPW35uWljwlgiKpomiiYiKRYWnhwFFFFOqKxgiBUuG
+AfgydZlvSASqyaiIocgMmQfKLxWYwrwqt5kTtYx+cjel29NHKsuZE7Yr+OyTQ44b
+F79HbMMu5x/LIpFQ2OtaE6kMuehFTPfd5vHpVpDy34RXRDmDZQe5VRz5X9dkyF1j
+i0OWw3yWi5CxOyoAbh8W5ZSSQZCMGVSYqRsi5WEiU5NNlcmQmgpWeYAEKzxNTcZQ
+USUCiKJiiYhYITIQ0b82SpDrJH7Oyc0LkshChwlVHe2lyZ6EQZ7UlET3/HgGDRx+
+51QVBob1Dk1b1379QEqstfzRqtrQ6defz2vc1PnFoRMv1GVfCo8bvDoWWnJx+Jbm
+3G0Tvskd1/dm9eqOeWX3fVq4N+XVyoemVbx0LKN05297t2YUvX1y/uMltLh+6xSW
+Sxvw8TdSQPMv+vTGtJq/N3y0sW3DhfGL/mz19n6Y8V3+xro1jV8VJTU3T4rveXpz
+3Dr1bFdPw8UbZe+MmZq3I9s+k3z5iVjjzHN1X3Z2F4TGlu67srjv1sON3b//sOZU
+Vlw72TJh8PwV9c5b3SWnDlQXJN094bXszC5nWNp7aQNqWpIfVA5WZN8c27VnRCy3
+9sWfakdlJYr3pM2ZPaK7YM21v9TaeTkL2PjLZ2/Nkot7Yn9M80sjq9s2tQzMay9d
+dTV0uGT6lL6BI4au75nlnxxPTU02A1sbe3/OZPnnvcuqtUuf7U5Mn/X9Mzk3ktCP
+vU3V16Lxoq7wpNFbli+vOeL4o9uv4Pb84VezVqen57Ttf7d5d4P39ANLOzIqZo4+
+f/Jb1vTKiZ1PHtp1sG1Mc+Xslw+ztX1kaqHedLwQBlo/+XzuubrUKUbdc8duFS9b
+3x6/MKzj8tnM/U8NOe+fW79E7p3xwV5P68iW603W9MRtK493huxY0qUV8f1Hsxav
+ai8ObCjO7P4Vp1st9z9282jR9pIrI9eeWXl6zqirh9c1CI8M2bY5lnKXP2/fjhtj
+ayLy8hljHCG0K6egenD6Pyq1+Sg=
+=dbVC
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/veonik
+
+==================================================================
+
