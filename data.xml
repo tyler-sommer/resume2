@@ -22,6 +22,7 @@
             <from>2018</from>
             <to/>
             <description>
+                <section>Expanded capabilities and improved stability of  embedded router agent. Lead maintainer and developer of open source agent and related tooling.</section>
                 <section>Responsible for building and scaling products geared toward home network and IoT management and security. Improved existing reporting capabilities and behind-the-scenes data aggregation and management.</section>
             </description>
         </position>
@@ -189,15 +190,15 @@
 
     <qualifications>
         <attribute type="strength">Go</attribute>
-        <attribute type="strength">Java</attribute>
         <attribute type="strength">Ruby</attribute>
+        <attribute type="strength">Java</attribute>
         <attribute type="strength">SQL</attribute>
         <attribute type="strength">Javascript</attribute>
         <attribute type="strength">Scala</attribute>
         <attribute type="strength">PHP</attribute>
+        <attribute type="needs-improvement">C</attribute>
         <attribute type="needs-improvement">Swift</attribute>
         <attribute type="needs-improvement">Objective-C</attribute>
-        <attribute type="needs-improvement">C</attribute>
         <attribute type="needs-improvement">C++</attribute>
         <attribute type="needs-improvement">Haskell</attribute>
         <attribute type="needs-improvement">Python</attribute>
