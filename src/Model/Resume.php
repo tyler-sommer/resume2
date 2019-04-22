@@ -56,4 +56,9 @@ class Resume
      * @var array|Qualification[] An array of skills and qualifications.
      */
     public $qualifications = array();
+    
+    /**
+     * @var array|Social[] An array of links to social networks and such.
+     */
+    public $social = array();
 }

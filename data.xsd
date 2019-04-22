@@ -77,6 +77,19 @@
       <xs:element type="projectType" name="project" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="socialType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="href" use="required" type="xs:string"/>
+        <xs:attribute name="icon" use="required" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="linksType">
+    <xs:sequence>
+      <xs:element type="socialType" name="social" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="resumeType">
     <xs:sequence>
       <xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1"/>
@@ -88,6 +101,7 @@
       <xs:element type="experienceType" name="experience" minOccurs="1" maxOccurs="1"/>
       <xs:element type="qualificationsType" name="qualifications" minOccurs="1" maxOccurs="1"/>
       <xs:element type="projectsType" name="projects" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="linksType" name="links" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

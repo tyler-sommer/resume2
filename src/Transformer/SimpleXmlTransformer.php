@@ -8,6 +8,7 @@ use TylerSommer\Resume\Model\Position;
 use TylerSommer\Resume\Model\Project;
 use TylerSommer\Resume\Model\Qualification;
 use TylerSommer\Resume\Model\Resume;
+use TylerSommer\Resume\Model\Social;
 
 /**
  * SimpleXmlTransformer transforms valid resume XML into PHP objects.
@@ -55,6 +56,15 @@ class SimpleXmlTransformer
             $quality->type = (string) $datum->attributes()->type;
 
             $model->qualifications[] = $quality;
+        }
+        
+        foreach ($data->links->social as $datum) {
+            $social = new Social();
+            $social->name = (string) $datum;
+            $social->icon = (string) $datum->attributes()->icon;
+            $social->href = (string) $datum->attributes()->href;
+
+            $model->social[] = $social;
         }
 
         return $model;

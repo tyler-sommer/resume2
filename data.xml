@@ -22,7 +22,7 @@
             <from>2018</from>
             <to/>
             <description>
-                <section>Expanded capabilities and improved stability of  embedded router agent. Lead maintainer and developer of open source agent and related tooling.</section>
+                <section>Expanded capabilities and improved stability of embedded router agent. Lead maintainer and developer of open source agent and related tooling.</section>
                 <section>Responsible for building and scaling products geared toward home network and IoT management and security. Improved existing reporting capabilities and behind-the-scenes data aggregation and management.</section>
             </description>
         </position>
@@ -92,13 +92,13 @@
         <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
         <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
     </experience>
-    
+
     <projects>
         <project>
             <name>Packages</name>
             <blurb>Composer package management made simple.</blurb>
-            <link href="https://github.com/terramar-labs/packages"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
-            <link href="http://docs.terramarlabs.com"><![CDATA[<i class="fa fa-book"></i> Documentation]]></link>
+            <link href="https://github.com/terramar-labs/packages"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="http://docs.terramarlabs.com"><![CDATA[<i class="fas fa-book"></i> Documentation]]></link>
             <description>
                 <section>Packages is a private Composer repository manager with GitHub and GitLab integration. Originally developed for Terramar Labs' internal work, we open sourced the project and maintain it to this day.</section>
                 <section>This project is a neat example of using webhooks to integrate with external services as well as a decently powerful continuous integration/deployment platform.</section>
@@ -112,7 +112,7 @@
                 <section>Stick is a Go language port of the Twig templating engine. Stick supports all Twig syntax though full Twig-compatibility is incomplete. Stick itself is feature complete and used in many of my personal projects.</section>
                 <section>This project started out from a need for a more powerful templating language than what was provided at the time by the Go standard library.</section>
             </description>
-            <link href="https://github.com/tyler-sommer/stick"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="https://github.com/tyler-sommer/stick"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
         </project>
 
         <project>
@@ -121,27 +121,27 @@
             <description>
                 <section>transpond is an Arduino application consisting of two parts: the transponder and the handset. The transponder is placed in the payload section of a model rocket and transmits data continuously to the handset. Sensors include GPS, Accel/Gyro/Magneto, voltage, and temperature.</section>
             </description>
-            <link href="https://github.com/veonik/transpond"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
+            <link href="https://github.com/veonik/transpond"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
         </project>
-        
+
         <project>
             <name>squIRCy2</name>
             <blurb>An IRC bot that is scriptable with javascript!</blurb>
             <description>
                 <section>squIRCy2 is an IRC bot written in Go that embeds a javascript VM that allows userland scripting via the filesystem or a web interface.</section>
             </description>
-            <link href="https://github.com/tyler-sommer/squircy2"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
-            <link href="http://squircy.com"><![CDATA[<i class="fa fa-book"></i> Documentation]]></link>
+            <link href="https://github.com/tyler-sommer/squircy2"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="http://squircy.com"><![CDATA[<i class="fas fa-book"></i> Documentation]]></link>
         </project>
-        
+
         <project>
             <name>MOTKI</name>
             <blurb>A suite of apps tailored for corp management in EVE online.</blurb>
             <description>
                 <section>The MOTKI project as a whole is a suite of software designed around managing a corporation in the video game EVE Online. MOTKI is a web application that integrates with many different data sources using the EVE Single Sign-On API to gather detailed information.</section>
             </description>
-            <link href="https://github.com/motki"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
-            <link href="https://motki.org"><![CDATA[<i class="fa fa-bookmark"></i> MOTKI Homepage]]></link>
+            <link href="https://github.com/motki"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="https://motki.org"><![CDATA[<i class="fas fa-bookmark"></i> MOTKI Homepage]]></link>
         </project>
 
         <project>
@@ -151,52 +151,29 @@
                 <section>VeonikBlogBundle is a Symfony bundle that has all the necessary functionality for quickly building a blog or CMS. Features include WYSIWYG editing, dynamic menus, user accounts, file uploading, and syntax highlighting for code snippets.</section>
                 <section>VeonikBlogBundle is largely what powers my personal blog, Tyler Sommer dot com.</section>
             </description>
-            <link href="https://github.com/veonik/VeonikBlogBundle"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
-        </project>
-
-        <project>
-            <name>Nice</name>
-            <blurb>A Nice PHP microframework.</blurb>
-            <description>
-                <section>Nice is a microframework built using Symfony components. There are several library integrations, for example, with Doctrine DBAL and ORM, Twig, and more.</section>
-                <section>Nice makes use of many Symfony internals, namely the HTTP Kernel and Service Containers. Instead of massive configuration files, Nice just uses PHP code to interact with the Service Container-- but still, the patterns around the Symfony components are largely reusable when prototype turns into production.</section>
-            </description>
-            <link href="https://github.com/nice-php/framework"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
-            <link href="http://niceframework.com"><![CDATA[<i class="fa fa-bookmark"></i> Website]]></link>
-            <link href="http://docs.niceframework.com"><![CDATA[<i class="fa fa-book"></i> Documentation]]></link>
-        </project>
-
-        <project>
-            <name>Orkestra Transactor</name>
-            <blurb>An intelligent platform for monetary processing applications.</blurb>
-            <description>
-                <section>The Transactor is another project that Terramar Labs' built and open-sourced. Though the project is showing its age, it has proven a reliable library that several production systems still use in practice.</section>
-                <section>Orkestra actually has several projects that were open-sourced and utilized pretty heavily by the team at Terramar Labs. Though the projects never achieved much notoriety, they have been mostly stable and supported since about 2012.</section>
-            </description>
-            <link href="https://github.com/orkestra/orkestra-transactor"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
-            <link href="https://github.com/orkestra"><![CDATA[<i class="fa fa-users"></i> Org GitHub]]></link>
+            <link href="https://github.com/veonik/VeonikBlogBundle"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
         </project>
 
         <project>
             <name>Tyler Sommer dot com</name>
             <blurb>My personal website.</blurb>
             <description>
-                <section>Tyler Sommer dot com is my most successful and long-running attempt at maintaining a blog. The application is built using Symfony and Doctrine, but still running on Symfony 2.8 and Bootstrap 2 it is starting to show signs of age.</section>
+                <section>Tyler Sommer dot com is my most successful and longest running attempt at maintaining a blog. The application is built using Symfony and Doctrine, but still running on Symfony 2.8 and Bootstrap 2 it is starting to show signs of age.</section>
             </description>
-            <link href="https://github.com/tyler-sommer/TylerSommerdotcom"><![CDATA[<i class="fa fa-github"></i> GitHub]]></link>
-            <link href="https://tylersommer.com"><![CDATA[<i class="fa fa-bookmark"></i> Tyler Sommer dot com]]></link>
+            <link href="https://github.com/tyler-sommer/TylerSommerdotcom"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="https://tylersommer.com"><![CDATA[<i class="fas fa-bookmark"></i> Tyler Sommer dot com]]></link>
         </project>
     </projects>
 
     <qualifications>
-        <attribute type="strength">Go</attribute>
         <attribute type="strength">Ruby</attribute>
-        <attribute type="strength">Java</attribute>
+        <attribute type="strength">Go</attribute>
+        <attribute type="strength">JavaScript</attribute>
         <attribute type="strength">SQL</attribute>
-        <attribute type="strength">Javascript</attribute>
+        <attribute type="strength">Java</attribute>
         <attribute type="strength">Scala</attribute>
         <attribute type="strength">PHP</attribute>
-        <attribute type="needs-improvement">C</attribute>
+        <attribute type="strength">C</attribute>
         <attribute type="needs-improvement">Swift</attribute>
         <attribute type="needs-improvement">Objective-C</attribute>
         <attribute type="needs-improvement">C++</attribute>
@@ -206,8 +183,8 @@
         <attribute type="platform">AWS</attribute>
         <attribute type="platform">GCP</attribute>
         <attribute type="platform">Linux</attribute>
+        <attribute type="platform">OpenWrt</attribute>
         <attribute type="platform">Docker</attribute>
-        <attribute type="platform">Java EE</attribute>
         <attribute type="platform">PostgreSQL</attribute>
         <attribute type="platform">MySQL</attribute>
         <attribute type="platform">Apache Spark</attribute>
@@ -215,4 +192,12 @@
         <attribute type="platform">Hive</attribute>
         <attribute type="platform">Cassandra</attribute>
     </qualifications>
+
+    <links>
+        <social href="https://github.com/tyler-sommer" icon="fab fa-github">GitHub</social>
+        <social href="https://tylersommer.com" icon="fas fa-blog">Blog</social>
+        <social href="https://twitter.com/syncreticidiot" icon="fab fa-twitter">Twitter</social>
+        <social href="https://www.linkedin.com/in/tylersommer/" icon="fab fa-linkedin">LinkedIn</social>
+        <social href="https://tylersommer.pro/print" icon="fas fa-print">Print Version</social>
+    </links>
 </resume>

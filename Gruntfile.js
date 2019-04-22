@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         src: [
           'web/css/opensans.css',
           'web/css/bootstrap-3.0.3.min.css',
-          'web/css/font-awesome.min.css',
+          'web/css/font-awesome.all.css',
           'web/css/main.css'
         ],
         dest: 'web/css/app.css'
