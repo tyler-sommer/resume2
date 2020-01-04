@@ -4,6 +4,7 @@
   "require": {
     "nice/framework": "~1.1",
     "nice/twig": "~1.0",
+    "symfony/http-foundation": "~2.8",
     "ext-simplexml": "*"
   },
   "autoload": {
