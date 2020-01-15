@@ -35,7 +35,7 @@
           <h3>Experience</h3>
           <dl>
 {% for position in resume.experience %}
-            <dt>{{ position.company }} / {{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</dt>
+            <dt class="position">{{ position.company }} / {{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</dt>
             <dd>
               <p>{{ position.description[0] }}</p>
 {% if position.description|length > 0 %}

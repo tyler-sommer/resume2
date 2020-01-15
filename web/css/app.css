@@ -4549,6 +4549,10 @@ a:link, a:visited, .navbar-default .navbar-nav > li > a:hover,
         background-color: white;
         font-size: 12px;
     }
+    
+    #profile.print dl dt:nth-of-type(6), #profile.print dl dt:nth-of-type(6) + dd {
+      display: none;
+    }
 }
 
 #profile.print dd.etc {
