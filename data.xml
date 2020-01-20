@@ -20,7 +20,7 @@
             <title>Full-stack Engineer</title>
             <location>Manchester, NH</location>
             <from>2018</from>
-            <to/>
+            <to>2020</to>
             <description>
                 <section>Expanded capabilities and improved stability of router agent on various embedded platforms. Lead maintainer and developer of open source embedded agent and related tooling.</section>
                 <section>Developed, launched, and operated cloud hosted router agent geared toward home and small business network monitoring and security. Responsible for building and supporting features and improvements to monolithic SaaS product.</section>
@@ -87,8 +87,8 @@
             </description>
         </position>
 
-        <extra>Maintainer of multiple open source projects. Responsible for libraries and applications handling payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
-        
+        <extra>Maintainer of multiple open source projects. Responsible for libraries and applications for payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
+        <extra>Built Arduino-based wireless transponder and touchscreen receiver for remotely tracking model rockets. Integrated a number of sensors including GPS, transmitting the readings at regular intervals to remote handheld receiver.</extra>
         <extra>Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
         <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
         <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
