@@ -20,7 +20,7 @@
             <title>Full-stack Engineer</title>
             <location>Manchester, NH</location>
             <from>2018</from>
-            <to>2020</to>
+            <to/>
             <description>
                 <section>Expanded capabilities and improved stability of router agent on various embedded platforms. Lead maintainer and developer of open source embedded agent and related tooling.</section>
                 <section>Developed, launched, and operated cloud hosted router agent geared toward home and small business network monitoring and security. Responsible for building and supporting features and improvements to monolithic SaaS product.</section>
