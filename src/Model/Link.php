@@ -13,6 +13,11 @@ class Link
     public $href;
 
     /**
+     * @var string An optional icon.
+     */
+    public $icon;
+
+    /**
      * @var string Text describing the link.
      */
     public $text;

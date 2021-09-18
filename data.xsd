@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="resume" type="resumeType"/>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://tylersommer.pro" xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:tspro="https://tylersommer.pro">
+  <xs:element name="resume" type="tspro:resumeType"/>
   <xs:complexType name="qualificationsType">
-    <xs:sequence>
-      <xs:element type="attributeType" name="attribute" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
+    <xs:choice>
+      <xs:element type="tspro:attributeType" name="attribute" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="profileType">
-    <xs:sequence>
+    <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="section" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="positionType">
-    <xs:sequence>
+    <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="company"/>
       <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="title"/>
       <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="location"/>
       <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="from"/>
       <xs:element type="xs:string" minOccurs="1" maxOccurs="1" name="to"/>
-      <xs:element type="descriptionType" minOccurs="1" maxOccurs="1" name="description"/>
-    </xs:sequence>
+      <xs:element type="tspro:descriptionType" minOccurs="1" maxOccurs="1" name="description"/>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="descriptionType">
-    <xs:sequence>
+    <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="section" maxOccurs="unbounded" minOccurs="1"/>
-    </xs:sequence>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="attributeType">
     <xs:simpleContent>
@@ -33,8 +33,22 @@
           <xs:simpleType>
             <xs:restriction base="xs:string">
               <xs:enumeration value="platform"/>
-              <xs:enumeration value="strength"/>
-              <xs:enumeration value="needs-improvement"/>
+              <xs:enumeration value="language"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="rusty" type="xs:boolean" default="false"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="extraType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="kind"  use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="contract"/>
+              <xs:enumeration value="hobby"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:attribute>
@@ -42,10 +56,10 @@
     </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="experienceType">
-    <xs:sequence>
-      <xs:element type="positionType" name="position" maxOccurs="unbounded" minOccurs="1"/>
-      <xs:element type="xs:string" name="extra" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="tspro:positionType" name="position" maxOccurs="unbounded" minOccurs="1"/>
+      <xs:element type="tspro:extraType" name="extra" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="imageType">
     <xs:simpleContent>
@@ -56,10 +70,11 @@
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
-  <xs:complexType name="anchorType">
+  <xs:complexType name="linkType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute name="href" use="required" type="xs:string"/>
+        <xs:attribute type="xs:string" name="href" use="required"/>
+        <xs:attribute type="xs:string" name="icon" use="optional"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -67,15 +82,15 @@
     <xs:sequence>
       <xs:element type="xs:string" name="name" maxOccurs="1" minOccurs="1"/>
       <xs:element type="xs:string" name="blurb" maxOccurs="1" minOccurs="0"/>
-      <xs:element type="descriptionType" name="description" maxOccurs="1" minOccurs="1"/>
-      <xs:element type="anchorType" name="link" maxOccurs="unbounded" minOccurs="1"/>
-      <xs:element type="imageType" name="image" maxOccurs="1" minOccurs="0"/>
+      <xs:element type="tspro:descriptionType" name="description" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="tspro:linkType" name="link" maxOccurs="unbounded" minOccurs="1"/>
+      <xs:element type="tspro:imageType" name="image" maxOccurs="1" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="projectsType">
-    <xs:sequence>
-      <xs:element type="projectType" name="project" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
+    <xs:choice>
+      <xs:element type="tspro:projectType" name="project" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="socialType">
     <xs:simpleContent>
@@ -86,22 +101,22 @@
     </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="linksType">
-    <xs:sequence>
-      <xs:element type="socialType" name="social" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
+    <xs:choice>
+      <xs:element type="tspro:socialType" name="social" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="resumeType">
     <xs:sequence>
       <xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1"/>
       <xs:element type="xs:string" name="phone" minOccurs="1" maxOccurs="1"/>
       <xs:element type="xs:string" name="email" minOccurs="1" maxOccurs="1"/>
-      <xs:element type="xs:string" name="title" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="title" minOccurs="1" maxOccurs="unbounded"/>
       <xs:element type="xs:string" name="description" minOccurs="1" maxOccurs="1"/>
-      <xs:element type="profileType" name="profile" minOccurs="1" maxOccurs="1"/>
-      <xs:element type="experienceType" name="experience" minOccurs="1" maxOccurs="1"/>
-      <xs:element type="qualificationsType" name="qualifications" minOccurs="1" maxOccurs="1"/>
-      <xs:element type="projectsType" name="projects" minOccurs="1" maxOccurs="1"/>
-      <xs:element type="linksType" name="links" minOccurs="0" maxOccurs="1"/>
+      <xs:element type="tspro:profileType" name="profile" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="tspro:experienceType" name="experience" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="tspro:projectsType" name="projects" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="tspro:qualificationsType" name="qualifications" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="tspro:linksType" name="links" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

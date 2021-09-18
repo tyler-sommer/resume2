@@ -23,9 +23,9 @@ class Resume
     public $email;
 
     /**
-     * @var string Self-appointed title.
+     * @var array|string[] Self-appointed titles.
      */
-    public $title;
+    public $titles = array();
 
     /**
      * @var array|string[] Array of paragraphs providing a short introduction or objective statement.
@@ -56,7 +56,7 @@ class Resume
      * @var array|Qualification[] An array of skills and qualifications.
      */
     public $qualifications = array();
-    
+
     /**
      * @var array|Social[] An array of links to social networks and such.
      */

@@ -31,7 +31,10 @@ class SimpleXmlTransformer
         $model->phone = (string) $data->phone;
         $model->email = (string) $data->email;
 
-        $model->title = (string) $data->title;
+        foreach ($data->title as $title) {
+            $model->titles[] = (string) $title;
+        }
+
         $model->description = (string) $data->description;
 
         foreach ($data->profile->section as $section) {
@@ -47,6 +50,7 @@ class SimpleXmlTransformer
         }
 
         foreach ($data->experience->extra as $section) {
+            // TODO: Make use of the kind attribute?
             $model->extra[] = (string) $section;
         }
 
@@ -54,10 +58,11 @@ class SimpleXmlTransformer
             $quality = new Qualification();
             $quality->name = (string) $datum;
             $quality->type = (string) $datum->attributes()->type;
+            $quality->rusty = (bool) $datum->attributes()->rusty;
 
             $model->qualifications[] = $quality;
         }
-        
+
         foreach ($data->links->social as $datum) {
             $social = new Social();
             $social->name = (string) $datum;
@@ -106,6 +111,7 @@ class SimpleXmlTransformer
         foreach ($datum->link as $rawLink) {
             $link = new Link();
             $link->href = (string) $rawLink->attributes()->href;
+            $link->icon = (string) $rawLink->attributes()->icon;
             $link->text = (string) $rawLink;
             $project->links[] = $link;
         }

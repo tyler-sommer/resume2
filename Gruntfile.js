@@ -13,8 +13,10 @@ module.exports = function (grunt) {
       grunt.verbose.ok();
     } else {
       grunt.verbose.error();
-      console.log(result);
-      grunt.fail.fatal(result.error || result.stderr.toString());
+      if (grunt.option('verbose')) {
+        console.log(result);
+      }
+      grunt.fail.fatal((result.stderr || result.error).toString());
     }
   };
 
@@ -97,18 +99,23 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('install-deps', function() {
-    grunt.verbose.writeln('Installing Composer dependencies... ');
+    grunt.log.write('Installing Composer dependencies... ');
     spawnSync('composer', 'install', '-o');
   });
-  
+
   grunt.registerTask('build-cache', function() {
-    grunt.verbose.write('Building cache... ');
+    grunt.log.write('Building cache... ');
     spawnSync('php', cwd+'/build-cache.php');
   });
 
   grunt.registerTask('clear-cache', function() {
-    grunt.verbose.write('Clearing cache... ');
-    spawnSync('rm', '-r', cwd+'/cache/dev');
+    grunt.log.write('Clearing cache... ');
+    spawnSync('sh', '-c', `rm -r ${cwd}/cache/dev || true`);
+  });
+
+  grunt.registerTask('dev-server', function() {
+    grunt.log.write('Running development php server at http://127.0.0.1:3000 ...');
+    spawnSync('php', '-S', '127.0.0.1:3000', '-t', cwd+'/web');
   });
 
   grunt.registerTask('minify-js', [
@@ -127,6 +134,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('cache', ['clear-cache', 'build-cache']);
   grunt.registerTask('install', ['install-deps', 'cache']);
+  grunt.registerTask('server', ['install', 'dev-server']);
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');

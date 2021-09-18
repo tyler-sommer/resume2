@@ -39,7 +39,7 @@
       </div>
     </div>
   </div>
- 
+
   <section id="welcome" class="page-welcome">
     <div>
       <ul class="slider-controls">
@@ -51,7 +51,7 @@
       <div class="row">
         <header class="centered">
           <h1>{{ resume.name }}</h1>
-          <p>{{ resume.title }}</p>
+          <p id="i-am-a">{{ resume.titles|first }}</p>
         </header>
         <div class="social-icons">
 {% for social in resume.social %}
@@ -80,7 +80,7 @@
 {% endfor %}
         </div>
       </div>
-    </div> 
+    </div>
   </section>
 
   <section id="experience" class="page-experience">
@@ -138,7 +138,7 @@
 {% if project.links|length %}
           <ul class="list-inline text-center">
 {% for link in project.links %}
-            <li class="project-link"><a href="{{ link.href }}">{{ link.text|raw }}</a></li>
+            <li class="project-link"><a href="{{ link.href }}">{% if link.icon %}<i class="{{ link.icon }}"></i> {% endif %}{{ link.text }}</a></li>
 {% endfor %}
           </ul>
 {% endif %}
@@ -147,7 +147,7 @@
       </div>
     </div>
   </section>
-  
+
   <section id="contact" class="page-contact">
     <div class="container">
       <header class="section-header">
@@ -164,7 +164,7 @@
       </div>
     </div>
   </section>
-  
+
   <section id="footer" class="page-footer">
     <div class="container">
       <p class="cp">&copy; {{ 'now'|date('Y') }} Tyler Sommer. <a href="{{ path('print') }}">Print version</a>.</p>
@@ -172,5 +172,10 @@
   </section>
 
   <script type="text/javascript" src="{{ asset('js/app.min.js') }}"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(document.body).data('titles', [{% for title in resume.titles %}'{{ title }}'{% if not loop.last %},{% endif %}{% endfor %}]);
+    });
+  </script>
 </body>
 </html>

@@ -17,55 +17,55 @@
   <![endif]-->
 </head>
 <body>
-  
+
   <section id="profile" class="page-profile print">
     <div class="row">
       <div class="col-sm-12">
-      <header class="section-header">
-        <h2 class="section-title">{{ resume.name }}</h2>
-        <p class="contact">{{ resume.email }}</p>
-        <p class="contact phone">{{ resume.phone }}</p>
-        <div class="spacer"></div>
-        <p class="section-subtitle">{{ resume.title }}</p>
-      </header>
-      <div class="row">
-        <div class="col-md-12">
-          <p>{{ resume.description }}</p>
+        <header class="section-header">
+          <h2 class="section-title">{{ resume.name }}</h2>
+          <p class="contact">{{ resume.email }}</p>
+          <p class="contact phone">{{ resume.phone }}</p>
           <div class="spacer"></div>
-          <h3>Experience</h3>
-          <dl>
+          <p class="section-subtitle">{{ resume.titles|first }}</p>
+        </header>
+        <div class="row">
+          <div class="col-md-12">
+            <p>{{ resume.description }}</p>
+            <div class="spacer"></div>
+            <h3>Experience</h3>
+            <dl>
 {% for position in resume.experience %}
-            <dt class="position{% if loop.index0 > 3 %} excess{% endif %}">{{ position.company }} / {{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</dt>
-            <dd{% if loop.index0 > 3 %} class="excess"{% endif %}>
-              <p>{{ position.description[0] }}</p>
+              <dt class="position{% if loop.index0 > 3 %} excess{% endif %}">{{ position.company }} / {{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</dt>
+              <dd{% if loop.index0 > 3 %} class="excess"{% endif %}>
+                <p>{{ position.description[0] }}</p>
 {% if position.description|length > 0 %}
-              <p>{{ position.description[1] }}</p>
+                <p>{{ position.description[1] }}</p>
 {% endif %}
-            </dd>
+              </dd>
 {% endfor %}
 
 {% if resume.extra|length %}
-            <dt class="etc">Et cetera</dt>
+              <dt class="etc">Et cetera</dt>
 {% for line in resume.extra|slice(0, 2) %}
-            <dd class="etc">{{ line|raw }}</dd>
+              <dd class="etc">{{ line|raw }}</dd>
 {% endfor %}
 {% endif %}
-          </dl>
-          <div class="spacer print-hidden"></div>
-          <h3 class="print-hidden">Qualifications</h3>
-          <dl class="dl-horizontal print-hidden">
-            <dt>Primary strengths</dt>
-            <dd>{% for attr in resume.qualifications if attr.type == 'strength' %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
-            
-            <dt>Working knowledge</dt>
-            <dd>{% for attr in resume.qualifications if attr.type == 'needs-improvement' %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
-            
-            <dt>Platforms</dt>
-            <dd>{% for attr in resume.qualifications if attr.type == 'platform' %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
-          </dl>
+            </dl>
+            <div class="spacer print-hidden"></div>
+            <h3 class="print-hidden">Qualifications</h3>
+            <dl class="dl-horizontal print-hidden">
+              <dt>Primary strengths</dt>
+              <dd>{% for attr in resume.qualifications if (attr.type == 'language' and not attr.rusty) %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
+
+              <dt>Working knowledge</dt>
+              <dd>{% for attr in resume.qualifications if (attr.type == 'language' and attr.rusty) %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
+
+              <dt>Platforms</dt>
+              <dd>{% for attr in resume.qualifications if (attr.type == 'platform' and not attr.rusty) %}{% if not loop.first %}, {% endif %}{{ attr.name }}{% endfor %}</dd>
+            </dl>
+          </div>
         </div>
       </div>
-      </div> 
     </div>
   </section>
 

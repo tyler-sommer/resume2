@@ -4,13 +4,16 @@
     <phone>(760) 576-5846</phone>
     <email>contact@tylersommer.pro</email>
 
-    <title>Professional Software Engineer</title>
-    <description>Eleven years of professional software engineering experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, integrations, and distributed and embedded systems. Strengths include problem solving, communication, technical writing, and systems operations. Passionate about open source software.</description>
+    <title>Software Engineer</title>
+    <title>Father</title>
+    <title>Tinkerer</title>
+    <title>Geek</title>
+    <description>More than a decade of professional software engineering experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, integrations, and distributed and embedded systems. Strengths include problem solving, communication, technical writing, and systems operations. Passionate about open source software.</description>
 
     <profile>
         <section>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</section>
         <section>For Christmas a year or so later, I received my own copy of Microsoft Frontpage 2000. I recall building many terrible, terrible websites dedicated to Pokémon and Dragonball Z. Meager beginnings to what would become a successful career in software engineering.</section>
-        <section>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Ten years later and I'm building resilient, distributed systems that operate on a global scale.</section>
+        <section>I landed my first professional coding gig in 2008, integrating landing pages with CRMs and CRMs with payment processors. Then, building a payment processor itself. A decade later and I'm building resilient, distributed systems that operate on a global scale.</section>
         <section>Computing is a major passion of mine. I am constantly fascinated by all aspects of software engineering. I'm always in search of knowledge and application. These days, I spend most of my time learning how to be a dad. Otherwise, you'll find me coding, tinkering, and learning new things... or watching Rick and Morty.</section>
     </profile>
 
@@ -22,8 +25,8 @@
             <from>2018</from>
             <to/>
             <description>
-                <section>Expanded capabilities and improved stability of router agent on various embedded platforms. Lead maintainer and developer of open source embedded agent and related tooling.</section>
-                <section>Developed, launched, and operated cloud hosted router agent geared toward home and small business network monitoring and security. Responsible for building and supporting features and improvements to monolithic SaaS product.</section>
+                <section>Expanded capabilities and improved stability across diverse projects ranging from embedded to cloud. Developed and supported infrastructure-as-code deployed in multiple cloud hosting providers around the globe.</section>
+                <section>Developed, launched, and scaled cloud hosted router agent geared toward network monitoring and security. Worked with customer-oriented teams to support customer deployments and develop institutional knowledgebase for available platforms.</section>
             </description>
         </position>
 
@@ -87,23 +90,23 @@
             </description>
         </position>
 
-        <extra>Maintainer of multiple open source projects. Responsible for libraries and applications for payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
-        <extra>Built Arduino-based wireless transponder and touchscreen receiver for remotely tracking model rockets. Integrated a number of sensors including GPS, transmitting the readings at regular intervals to remote handheld receiver.</extra>
-        <extra>Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
-        <extra>Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
-        <extra>Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
+        <extra kind="hobby">Maintainer of multiple open source projects. Responsible for libraries and applications for payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
+        <extra kind="hobby">Built Arduino-based wireless transponder and touchscreen receiver for remotely tracking model rockets. Integrated a number of sensors including GPS, transmitting the readings at regular intervals to remote handheld receiver.</extra>
+        <extra kind="contract">Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
+        <extra kind="contract">Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
+        <extra kind="contract">Built proof-of-concept photo mosaic generating app for iOS. Finished prototype was delivered and presented to several high profile clients with great reception.</extra>
     </experience>
 
     <projects>
         <project>
             <name>Packages</name>
             <blurb>Composer package management made simple.</blurb>
-            <link href="https://github.com/terramar-labs/packages"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
-            <link href="http://docs.terramarlabs.com"><![CDATA[<i class="fas fa-book"></i> Documentation]]></link>
             <description>
                 <section>Packages is a private Composer repository manager with GitHub and GitLab integration. Originally developed for Terramar Labs' internal work, we open sourced the project and maintain it to this day.</section>
                 <section>This project is a neat example of using webhooks to integrate with external services as well as a decently powerful continuous integration/deployment platform.</section>
             </description>
+            <link href="https://github.com/terramar-labs/packages" icon="fab fa-github">GitHub</link>
+            <link href="http://docs.terramarlabs.com" icon="fas fa-book">Documentation</link>
         </project>
 
         <project>
@@ -113,7 +116,7 @@
                 <section>Stick is a Go language port of the Twig templating engine. Stick supports all Twig syntax though full Twig-compatibility is incomplete. Stick itself is feature complete and used in many of my personal projects.</section>
                 <section>This project started out from a need for a more powerful templating language than what was provided at the time by the Go standard library.</section>
             </description>
-            <link href="https://github.com/tyler-sommer/stick"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="https://github.com/tyler-sommer/stick" icon="fab fa-github">GitHub</link>
         </project>
 
         <project>
@@ -122,7 +125,7 @@
             <description>
                 <section>transpond is an Arduino application consisting of two parts: the transponder and the handset. The transponder is placed in the payload section of a model rocket and transmits data continuously to the handset. Sensors include GPS, Accel/Gyro/Magneto, voltage, and temperature.</section>
             </description>
-            <link href="https://github.com/veonik/transpond"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="https://github.com/veonik/transpond" icon="fab fa-github">GitHub</link>
         </project>
 
         <project>
@@ -131,8 +134,8 @@
             <description>
                 <section>squIRCy2 is an IRC bot written in Go that embeds a javascript VM that allows userland scripting via the filesystem or a web interface.</section>
             </description>
-            <link href="https://github.com/tyler-sommer/squircy2"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
-            <link href="http://squircy.com"><![CDATA[<i class="fas fa-book"></i> Documentation]]></link>
+            <link href="https://github.com/tyler-sommer/squircy2" icon="fab fa-github">GitHub</link>
+            <link href="https://squircy.com" icon="fas fa-book">Documentation</link>
         </project>
 
         <project>
@@ -141,7 +144,7 @@
             <description>
                 <section>The MOTKI project as a whole is a suite of software designed around managing a corporation in the video game EVE Online. MOTKI is a web application that integrates with many different data sources using the EVE Single Sign-On API to gather detailed information.</section>
             </description>
-            <link href="https://github.com/motki"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="https://github.com/motki" icon="fab fa-github">GitHub</link>
         </project>
 
         <project>
@@ -151,7 +154,7 @@
                 <section>VeonikBlogBundle is a Symfony bundle that has all the necessary functionality for quickly building a blog or CMS. Features include WYSIWYG editing, dynamic menus, user accounts, file uploading, and syntax highlighting for code snippets.</section>
                 <section>VeonikBlogBundle is largely what powers my personal blog, Tyler Sommer dot com.</section>
             </description>
-            <link href="https://github.com/veonik/VeonikBlogBundle"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
+            <link href="https://github.com/veonik/VeonikBlogBundle" icon="fab fa-github">GitHub</link>
         </project>
 
         <project>
@@ -160,37 +163,45 @@
             <description>
                 <section>Tyler Sommer dot com is my most successful and longest running attempt at maintaining a blog. The application is built using Symfony and Doctrine, but still running on Symfony 2.8 and Bootstrap 2 it is starting to show signs of age.</section>
             </description>
-            <link href="https://github.com/tyler-sommer/TylerSommerdotcom"><![CDATA[<i class="fab fa-github"></i> GitHub]]></link>
-            <link href="https://tylersommer.com"><![CDATA[<i class="fas fa-bookmark"></i> Tyler Sommer dot com]]></link>
+            <link href="https://github.com/tyler-sommer/TylerSommerdotcom" icon="fab fa-github">GitHub</link>
+            <link href="https://tylersommer.com" icon="fas fa-bookmark">Tyler Sommer dot com</link>
         </project>
     </projects>
 
     <qualifications>
-        <attribute type="strength">Ruby</attribute>
-        <attribute type="strength">Go</attribute>
-        <attribute type="strength">JavaScript</attribute>
-        <attribute type="strength">SQL</attribute>
-        <attribute type="strength">Java</attribute>
-        <attribute type="strength">Scala</attribute>
-        <attribute type="strength">PHP</attribute>
-        <attribute type="strength">C</attribute>
-        <attribute type="needs-improvement">Swift</attribute>
-        <attribute type="needs-improvement">Objective-C</attribute>
-        <attribute type="needs-improvement">C++</attribute>
-        <attribute type="needs-improvement">Haskell</attribute>
-        <attribute type="needs-improvement">Python</attribute>
-        <attribute type="needs-improvement">C#</attribute>
+        <attribute type="language">Ruby</attribute>
+        <attribute type="language">Go</attribute>
+        <attribute type="language">TypeScript</attribute>
+        <attribute type="language">SQL</attribute>
+        <attribute type="language">Bash</attribute>
+        <attribute type="language">RouterOS Script</attribute>
+        <attribute type="language">C</attribute>
+        <attribute type="language">PHP</attribute>
+        <attribute type="language" rusty="true">Java</attribute>
+        <attribute type="language" rusty="true">Scala</attribute>
+        <attribute type="language" rusty="true">Swift</attribute>
+        <attribute type="language" rusty="true">Objective-C</attribute>
+        <attribute type="language" rusty="true">C++</attribute>
+        <attribute type="language" rusty="true">Haskell</attribute>
+        <attribute type="language" rusty="true">Python</attribute>
+        <attribute type="language" rusty="true">Rust</attribute>
+        <attribute type="language" rusty="true">C#</attribute>
         <attribute type="platform">AWS</attribute>
-        <attribute type="platform">GCP</attribute>
+        <attribute type="platform" rusty="true">GCP</attribute>
+        <attribute type="platform">Azure</attribute>
         <attribute type="platform">Linux</attribute>
         <attribute type="platform">OpenWrt</attribute>
+        <attribute type="platform">MikroTik</attribute>
         <attribute type="platform">Docker</attribute>
+        <attribute type="platform">Kubernetes</attribute>
+        <attribute type="platform">Terraform</attribute>
+        <attribute type="platform">Ansible</attribute>
         <attribute type="platform">PostgreSQL</attribute>
         <attribute type="platform">MySQL</attribute>
-        <attribute type="platform">Apache Spark</attribute>
-        <attribute type="platform">Hadoop</attribute>
-        <attribute type="platform">Hive</attribute>
-        <attribute type="platform">Cassandra</attribute>
+        <attribute type="platform" rusty="true">Apache Spark</attribute>
+        <attribute type="platform" rusty="true">Hadoop</attribute>
+        <attribute type="platform" rusty="true">Hive</attribute>
+        <attribute type="platform" rusty="true">Cassandra</attribute>
     </qualifications>
 
     <links>

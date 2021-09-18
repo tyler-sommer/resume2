@@ -2,3 +2,5 @@ node_modules
 vendor
 cache
 logs
+web/index.html
+web/print.html
