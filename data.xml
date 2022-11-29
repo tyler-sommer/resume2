@@ -226,6 +226,7 @@
     <links>
         <social href="https://github.com/tyler-sommer" icon="fab fa-github">GitHub</social>
         <social href="https://tylersommer.com" icon="fas fa-blog">Blog</social>
+        <social href="https://defcon.social/@syncreticidiot" icon="fab fa-mastodon">Mastodon</social>
         <social href="https://twitter.com/syncreticidiot" icon="fab fa-twitter">Twitter</social>
         <social href="https://www.linkedin.com/in/tylersommer/" icon="fab fa-linkedin">LinkedIn</social>
         <social href="https://tylersommer.pro/print" icon="fas fa-print">Print Version</social>

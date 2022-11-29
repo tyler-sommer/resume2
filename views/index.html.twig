@@ -56,7 +56,7 @@
         <div class="social-icons">
 {% for social in resume.social %}
 {% set btn_class = social.icon|replace({'fas fa-': '', 'fab fa-': ''}) %}
-          <a href="{{ social.href }}" class="btn btn-round btn-clear btn-{{ btn_class }}" aria-label="{{ social.name }}"><i class="{{ social.icon }}"></i></a>
+          <a rel="me" href="{{ social.href }}" class="btn btn-round btn-clear btn-{{ btn_class }}" aria-label="{{ social.name }}"><i class="{{ social.icon }}"></i></a>
 {% endfor %}
         </div>
       </div>
