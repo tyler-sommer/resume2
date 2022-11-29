@@ -129,12 +129,30 @@
         </project>
 
         <project>
+            <name>squircy3</name>
+            <blurb>The penultimate IRC bot</blurb>
+            <description>
+                <section>squircy3 is a platform for building event based applications, such as chat bots. Functionality is based around plugins, which include support for Discord, IRC, and a built-in JavaScript runtime with full interop between JS and Go, thanks to the incredible github.com/dop251/goja project, a little babel.js, and a bunch of fairy dust.</section>
+            </description>
+            <link href="https://github.com/veonik/squircy3" icon="fab fa-github">GitHub</link>
+        </project>
+
+        <project>
+            <name>squirssi</name>
+            <blurb>An irssi-inspired terminal IRC client</blurb>
+            <description>
+                <section>squirssi is an IRC client implemented as squircy3 plugins. Started as a proof-of-concept, squirssi is now very usable as a real IRC client.. if a terminal-based client is your thing.</section>
+            </description>
+            <link href="https://github.com/veonik/squirssi" icon="fab fa-github">GitHub</link>
+        </project>
+
+        <project>
             <name>squIRCy2</name>
             <blurb>An IRC bot that is scriptable with javascript!</blurb>
             <description>
-                <section>squIRCy2 is an IRC bot written in Go that embeds a javascript VM that allows userland scripting via the filesystem or a web interface.</section>
+                <section>squIRCy2 is an IRC bot written in Go that embeds a javascript VM that allows userland scripting via the filesystem or a web interface. Now deprecated in favor of squircy3, this project still holds a special place in my heart and deserves a mention.</section>
             </description>
-            <link href="https://github.com/tyler-sommer/squircy2" icon="fab fa-github">GitHub</link>
+            <link href="https://github.com/veonik/squircy2" icon="fab fa-github">GitHub</link>
             <link href="https://squircy.com" icon="fas fa-book">Documentation</link>
         </project>
 
@@ -171,6 +189,7 @@
     <qualifications>
         <attribute type="language">Ruby</attribute>
         <attribute type="language">Go</attribute>
+        <attribute type="language">JavaScript</attribute>
         <attribute type="language">TypeScript</attribute>
         <attribute type="language">SQL</attribute>
         <attribute type="language">Bash</attribute>
