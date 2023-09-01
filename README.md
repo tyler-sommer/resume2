@@ -3,7 +3,7 @@ Tyler Sommer's Resume
 
 My personal resume website, [tylersommer.pro](https://tylersommer.pro).
 
-Copyright 2014-2022 Tyler Sommer. All rights reserved.
+Copyright 2014-2023 Tyler Sommer. All rights reserved.
 
 
 Overview
