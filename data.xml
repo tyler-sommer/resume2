@@ -26,7 +26,7 @@
             <to>2023</to>
             <description>
                 <section>Expanded capabilities and improved stability across diverse projects ranging from embedded C codebases to cloud-based Ruby on Rails, Rust, and TypeScript applications. Developed and supported infrastructure-as-code deployed around the globe in AWS and Azure.</section>
-                <section>Developed, launched, and scaled cloud hosted router agent geared toward network monitoring and security. Worked closely with customer-facing teams to support customer deployments and develop institutional knowledgebase for available platforms.</section>
+                <section>Developed, launched, and scaled cloud hosted router agent geared toward network monitoring and security. Worked closely with customer-facing teams to support customer deployments and develop institutional knowledge base for available platforms.</section>
                 <section>Launched open source version of embedded router agent and developed cloud-side tools and documentation to manage open source installations. Added desktop linux support for the agent and launched Raspberry Pi based installation support.</section>
             </description>
         </position>
@@ -50,7 +50,7 @@
             <from>2015</from>
             <to>2016</to>
             <description>
-                <section>Designed and built business and customer management software for service-based industries like pest control and lawncare. Developed customer, truck routing, invoicing, and sales team management systems.</section>
+                <section>Designed and built business and customer management software for service-based industries like pest control and lawn care. Developed customer, truck routing, invoicing, and sales team management systems.</section>
                 <section>Responsible for maintaining and improving existing Symfony code-base. Implemented unit testing, integration testing, and continuous integration processes.</section>
             </description>
         </position>
