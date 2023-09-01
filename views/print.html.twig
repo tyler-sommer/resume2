@@ -35,12 +35,11 @@
             <h3>Experience</h3>
             <dl>
 {% for position in resume.experience %}
-              <dt class="position{% if loop.index0 > 3 %} excess{% endif %}">{{ position.company }} / {{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</dt>
+              <dt class="position{% if loop.index0 > 4 %} excess{% endif %}">{{ position.company }} / {{ position.title }} / {{ position.location }} / {{ position.from }} - {{ position.to }}</dt>
               <dd{% if loop.index0 > 3 %} class="excess"{% endif %}>
-                <p>{{ position.description[0] }}</p>
-{% if position.description|length > 0 %}
-                <p>{{ position.description[1] }}</p>
-{% endif %}
+{% for line in position.description %}
+                <p>{{ line }}</p>
+{% endfor %}
               </dd>
 {% endfor %}
 

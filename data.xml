@@ -8,7 +8,7 @@
     <title>Father</title>
     <title>Tinkerer</title>
     <title>Geek</title>
-    <description>More than a decade of professional software engineering experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, integrations, and distributed and embedded systems. Strengths include problem solving, communication, technical writing, and systems operations. Passionate about open source software.</description>
+    <description>Fifteen years of professional software engineering experience in demanding, fast-paced environments. Focus primarily in backend systems: infrastructure, integrations, and distributed and embedded systems. Strengths include problem solving, communication, technical writing, and systems operations. Passionate about open source software.</description>
 
     <profile>
         <section>Born and raised in the suburbs outside Salt Lake City, Utah, I got my first computer around 1998 when I was just ten years old. It was a beige Windows 95 machine and it opened doors to someplace magical.</section>
@@ -20,13 +20,14 @@
     <experience>
         <position>
             <company>Minim</company>
-            <title>Full-stack Engineer</title>
+            <title>Senior Full-Stack Engineer</title>
             <location>Manchester, NH</location>
             <from>2018</from>
-            <to/>
+            <to>2023</to>
             <description>
-                <section>Expanded capabilities and improved stability across diverse projects ranging from embedded to cloud. Developed and supported infrastructure-as-code deployed in multiple cloud hosting providers around the globe.</section>
-                <section>Developed, launched, and scaled cloud hosted router agent geared toward network monitoring and security. Worked with customer-oriented teams to support customer deployments and develop institutional knowledgebase for available platforms.</section>
+                <section>Expanded capabilities and improved stability across diverse projects ranging from embedded C codebases to cloud-based Ruby on Rails, Rust, and TypeScript applications. Developed and supported infrastructure-as-code deployed around the globe in AWS and Azure.</section>
+                <section>Developed, launched, and scaled cloud hosted router agent geared toward network monitoring and security. Worked closely with customer-facing teams to support customer deployments and develop institutional knowledgebase for available platforms.</section>
+                <section>Launched open source version of embedded router agent and developed cloud-side tools and documentation to manage open source installations. Added desktop linux support for the agent and launched Raspberry Pi based installation support.</section>
             </description>
         </position>
 
@@ -49,7 +50,7 @@
             <from>2015</from>
             <to>2016</to>
             <description>
-                <section>Designed and built business and customer management software for service-based industries. Developed customer, truck routing, and sales team management systems.</section>
+                <section>Designed and built business and customer management software for service-based industries like pest control and lawncar. Developed customer, truck routing, invoicing, and sales team management systems.</section>
                 <section>Responsible for maintaining and improving existing Symfony code-base. Implemented unit testing, integration testing, and continuous integration processes.</section>
             </description>
         </position>
@@ -90,7 +91,7 @@
             </description>
         </position>
 
-        <extra kind="hobby">Maintainer of multiple open source projects. Responsible for libraries and applications for payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
+        <extra kind="hobby">Maintainer of multiple open source projects in free time. Responsible for libraries and applications for payment processing, API consumption, templating, software package management, and pseudo-interactive chat participants.</extra>
         <extra kind="hobby">Built Arduino-based wireless transponder and touchscreen receiver for remotely tracking model rockets. Integrated a number of sensors including GPS, transmitting the readings at regular intervals to remote handheld receiver.</extra>
         <extra kind="contract">Designed and developed proprietary advertising tracking platform with single point of integration pixel placement and extensive reporting functionality.</extra>
         <extra kind="contract">Expanded feature-set on a proprietary CRM/CMS system with a primary focus on fulfillment integration and and e-commerce reporting. Worked with small team of developers to improve performance and scalability.</extra>
