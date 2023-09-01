@@ -197,6 +197,7 @@
         <attribute type="language">RouterOS Script</attribute>
         <attribute type="language">C</attribute>
         <attribute type="language">PHP</attribute>
+        <attribute type="language" rusty="true">Rust</attribute>
         <attribute type="language" rusty="true">Java</attribute>
         <attribute type="language" rusty="true">Scala</attribute>
         <attribute type="language" rusty="true">Swift</attribute>
@@ -204,7 +205,6 @@
         <attribute type="language" rusty="true">C++</attribute>
         <attribute type="language" rusty="true">Haskell</attribute>
         <attribute type="language" rusty="true">Python</attribute>
-        <attribute type="language" rusty="true">Rust</attribute>
         <attribute type="language" rusty="true">C#</attribute>
         <attribute type="platform">AWS</attribute>
         <attribute type="platform" rusty="true">GCP</attribute>
