@@ -3,6 +3,8 @@
 use Symfony\Component\HttpFoundation\Request;
 use TylerSommer\Resume\Transformer\SimpleXmlTransformer;
 
+ini_set('display_errors', 'stderr');
+
 require_once __DIR__ . '/boostrap.php';
 
 $app->boot();
