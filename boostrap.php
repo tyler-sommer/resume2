@@ -47,7 +47,7 @@ $renderCachedPage = function(Request $request, $template) use ($app, $templateDi
     return $response;
 };
 
-$app->appendExtension(new TwigExtension($templateDir));
+$app->appendExtension(new TwigExtension(array('template_dir' => $templateDir)));
 $app->set('routes', function (RouteCollector $r) use ($renderCachedPage) {
     $r->map('/', 'home', function (Request $request, Application $app) use ($renderCachedPage) {
         return $renderCachedPage($request, 'index.html.twig');

@@ -6,7 +6,6 @@ use TylerSommer\Resume\Transformer\SimpleXmlTransformer;
 require_once __DIR__ . '/boostrap.php';
 
 $app->boot();
-$app->getContainer()->enterScope('request');
 $app->getContainer()->set('request', new Request());
 
 $webDir = $app->getRootDir().'/web';
