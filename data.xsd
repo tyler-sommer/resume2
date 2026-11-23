@@ -110,6 +110,8 @@
       <xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1"/>
       <xs:element type="xs:string" name="phone" minOccurs="1" maxOccurs="1"/>
       <xs:element type="xs:string" name="email" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="github" minOccurs="0" maxOccurs="1"/>
+      <xs:element type="xs:string" name="linkedin" minOccurs="0" maxOccurs="1"/>
       <xs:element type="xs:string" name="title" minOccurs="1" maxOccurs="unbounded"/>
       <xs:element type="xs:string" name="description" minOccurs="1" maxOccurs="1"/>
       <xs:element type="tspro:profileType" name="profile" minOccurs="1" maxOccurs="1"/>
