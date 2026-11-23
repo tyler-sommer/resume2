@@ -29,7 +29,6 @@
             <description>
                 <section>Designed and built the firm's AI platform from the first commit: a Go service that ingests more than half a million case documents into Postgres with pgvector and powers an agentic chat assistant, demand-letter drafting, medical timelines, and case risk scans. Integrated it into the firm's Symfony practice-management system and rolled it out to all staff.</section>
                 <section>Built evaluation harnesses with per-run cost tracking to measure AI features before release. Raised a provider-contact matching feature from 25% to 90% first-choice accuracy, shipped call-intake triage at about 98% agreement for a quarter of a cent per call, and cut inference cost on call-to-case matching by 86%.</section>
-                <section>Designed and run a multi-agent engineering workflow in which project-manager agents brief, delegate to, and verify headless coding agents (Claude Code and OpenAI Codex), with an adversarial review step before every push. Merged 38 pull requests and shipped 7 releases across three repositories in one week under this model.</section>
             </description>
         </position>
         <position>
